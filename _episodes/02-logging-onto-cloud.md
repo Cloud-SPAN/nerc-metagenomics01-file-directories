@@ -54,12 +54,13 @@ To login into your AWS instance for this course, you'll need:
 As the name implies, **ssh** provides you with a secure (encrypted) way to use a remote *shell*, as simple as this (you do not have to type this yet):
 
  ~~~
- $ ssh -i login-key-instanceNN.pem  csuser@instanceNN-gc.cloud-span.aws.york.ac.uk
+ $ ssh -i login-key-instanceNN.pem csuser@instanceNN-gc.cloud-span.aws.york.ac.uk
  ~~~
  {: .bash}
 
 A few seconds after you enter that command to the shell in your computer, you will be logged into your AWS instance and start using a (Linux) shell running in your instance.
 
+<!--> LEGACY - Copied to episode01-understanding-file-systems
 But first, to keep things tidy and easily accessible, create a folder (or directory) to keep everything related to this course: your login key file, your notes, data, etc.  We will then download your login key file to that folder and change its access permissions for the reasons given below. Finally we will login into your instance with ssh.
 
 ## Create a folder for the course and download your login key file to that folder
@@ -81,7 +82,7 @@ But first, to keep things tidy and easily accessible, create a folder (or direct
    If your browser asks you "where do you want to download the file?", choose the directory for the course you just created.
 
    Otherwise, drag and drop your login key file from wherever it was downloaded to the folder for the course you created.
-
+<!-->
 ## Open a Terminal and change the access permissions of your login key file
 
 1. **Open terminal** (or Git Bash terminal if you are a Windows user). 
