@@ -5,10 +5,10 @@ exercises: 40
 questions:
 - 
 objectives:
-- Explain the hierarchical structure of a file system
-- Understand the structure of the file system on their on machine
-- Create, move and delete folders and files on their machine
-- Understand what working directories are
+- "Explain the hierarchical structure of a file system"
+- "Understand the structure of the file system on their on machine"
+- "Create, move and delete folders and files on their machine"
+- "Understand what working directories are"
 
 keypoints:
 -
