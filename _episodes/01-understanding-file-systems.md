@@ -37,24 +37,41 @@ It is easiest to picture your file system as a tree, starting with the **root** 
 >
 > Hint: remind yourself of your file system's layout using a file manager application such as:
 >
-> <img src="../fig/icon-file-explorer-windows.png" width="20px" align="left">  **File Explorer** in Windows.  
-> <img src="../fig/icon-finder-mac.png" width="20px" align="left">  **Finder** on Mac.
+> - <img src="../fig/icon-file-explorer-windows.png" width="20px" align="left">  **File Explorer** in Windows.  
+> - <img src="../fig/icon-finder-mac.png" width="20px" align="left">  **Finder** on Mac.
 >
 > You probably use these applications regularly to find and organise files.
 {: .challenge}
 
-<!--> Copied from episode02-logging-onto-cloud <!-->
-But first, to keep things tidy and easily accessible, create a folder (or directory) to keep everything related to this course: your login key file, your notes, data, etc.  We will then download your login key file to that folder and change its access permissions for the reasons given below. Finally we will login into your instance with ssh.
+## File Paths
 
-## Create a folder for the course and download your login key file to that folder
+It is not practical to draw out a tree diagram every time we want to refer to a file's location with a system. Instead, we can represent the information as a **file path**.
+
+In a **file path**, each directory is represented as a separate component separated by a character such as `\` or `/`. It is like writing an address or set of instructions for someone to follow if they want to find a specific file.
+
+For example, the path for the file called *doc3.txt* in the file system above looks like this:
+`root/docs/data/doc3.txt`.
+
+
+## Create a folder for the course
+
+To keep things tidy and easily accessible, we will create a folder (directory) to keep everything related to this course: the key you will need to log in, your notes, data etc. 
+
+In theory you can make this file anywhere in your file system but we recommend making it inside your Desktop folder, to make it easy to access.
 
 1. **Create the folder** *cloudspan* in your *Desktop*.
 
-   In your Desktop, click the right button of the mouse to open the File Explorer/Manager menu, and then left click on New and then on Folder, in Windows, or New Folder in Linux Gnome.
+   Minimise all windows until you can see your desktop background. Right click and select *New*, then *Folder*. Name the folder *cloudspan*.
 
-   Name the folder *cloudspan*
+   You should see a folder icon appear on your desktop with the label *cloudspan*.
 
-   Later you can change the name of the folder and move it somewhere else.
+   Additionally, if you enter your file explorer application you should be able to click on the *Desktop* directory at the side and see the *cloudspan* folder.
+
+****
+
+We will then download your login key file to that folder and change its access permissions for the reasons given below. Finally we will login into your instance with ssh.
+
+
 
 2. **Download your login key file** to the folder you just created.
 
