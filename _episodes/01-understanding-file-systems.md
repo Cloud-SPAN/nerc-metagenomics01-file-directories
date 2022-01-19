@@ -35,12 +35,10 @@ It is easiest to picture your file system as a tree, starting with the **root** 
 > ## Exercise
 > Think about your own computer and how your files and directories are organised. Sketch a tree diagram like the one above for your file system.
 >
-> Hint: remind yourself of your file system's layout using a file manager application such as File Explorer (Windows) or Finder (Mac) . You probably use these applications regularly to find and organise files.
+> Hint: remind yourself of your file system's layout using a file manager application such as **File Explorer** in Windows (<img src="../fig/icon-file-explorer-windows.png" width="20px">) or **Finder** on Mac (<img src="../fig/icon-finder-mac.png" width="20px">).
+> You probably use these applications regularly to find and organise files.
 > 
-> Windows File Explorer | Mac Finder
-> :--------------------:|:----------:
-> ![File Explorer icon](../fig/icon-file-explorer-windows.png){:height="30px"} | ![Finder icon](../fig/icon-finder-mac.png){:height="30px"}
-
+{: .challenge}
 
 <!--> Copied from episode02-logging-onto-cloud <!-->
 But first, to keep things tidy and easily accessible, create a folder (or directory) to keep everything related to this course: your login key file, your notes, data, etc.  We will then download your login key file to that folder and change its access permissions for the reasons given below. Finally we will login into your instance with ssh.
