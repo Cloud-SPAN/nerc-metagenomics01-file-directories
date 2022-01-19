@@ -37,14 +37,14 @@ The directory you are working inside is called your **working directory**. For e
 > ## Exercise
 > Think about your own computer and how your files and directories are organised. Sketch a tree diagram like the one above for your file system.
 >
-> Hint: remind yourself of your file system's layout using a file manager application such as:>
+> Hint: remind yourself of your file system's layout using a file manager application such as:
 >| File Explorer (Windows) | Finder (Mac) |
->|:---|:---|
+>|---|---|
 >|<img src="../fig/icon-file-explorer-windows.png" width="50px">|<img src="../fig/icon-finder-mac.png" width="50px">|
 >
 >| File Explorer (Windows) | <img src="../fig/icon-file-explorer-windows.png" width="50px"> |
->|:---|:---|
->|Finder (Mac) |<img src="../fig/icon-finder-mac.png" width="50px">||>
+>|---|---|
+>|Finder (Mac) |<img src="../fig/icon-finder-mac.png" width="50px">|
 >
 > You probably use these applications regularly to find and organise files.
 {: .challenge}
