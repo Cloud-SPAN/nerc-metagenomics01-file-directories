@@ -35,9 +35,12 @@ It is easiest to picture your file system as a tree, starting with the **root** 
 > ## Exercise
 > Think about your own computer and how your files and directories are organised. Sketch a tree diagram like the one above for your file system.
 >
-> Hint: remind yourself of your file system's layout using a file manager application such as **File Explorer** in Windows (<img src="../fig/icon-file-explorer-windows.png" width="20px">) or **Finder** on Mac (<img src="../fig/icon-finder-mac.png" width="20px">).
+> Hint: remind yourself of your file system's layout using a file manager application such as:
+>
+> <img src="../fig/icon-file-explorer-windows.png" width="20px" align="left">  **File Explorer** in Windows.  
+> <img src="../fig/icon-finder-mac.png" width="20px" align="left">  **Finder** on Mac.
+>
 > You probably use these applications regularly to find and organise files.
-> 
 {: .challenge}
 
 <!--> Copied from episode02-logging-onto-cloud <!-->
