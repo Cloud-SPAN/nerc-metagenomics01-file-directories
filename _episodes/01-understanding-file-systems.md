@@ -30,7 +30,7 @@ In a file system, files are often organised into **directories**, which can also
 
 It is easiest to picture your file system as a tree, starting with the **root** (or **home**) directory and branching out from there. This is called a **hierarchical structure**. Here is an example of a hierarchical file structure:
 
-![A file hierarchy containing 4 levels of folders and files](../fig/file-system-hierarchy-graphic.png)
+![A file hierarchy containing 4 levels of folders and files](../fig/file-system-hierarchy-graphic.png){:height="500px"}
 
 > ## Exercise
 > Think about your own computer and how your files and directories are organised. Sketch a tree diagram like the one above for your file system.
