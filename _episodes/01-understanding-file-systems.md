@@ -31,7 +31,7 @@ In a file system, files are organised into **directories**, which can also be ca
 
 It is easiest to picture your file system as a tree, starting with the **root** (or **home**) directory and branching out from there. This is called a **hierarchical structure**. Here is an example of a hierarchical file structure:
 
-![A file hierarchy containing 4 levels of folders and files](../fig/file-system-hierarchy-graphic-2.png){:height="500px"}
+![A file hierarchy containing 4 levels of folders and files](../fig/file-system-hierarchy-graphic-2.png){:width="450px"}
 
 The directory you are working inside is called your **working directory**. For example, if you were editing `doc2.txt` in the diagram above, your working directory would be the folder called `docs`.
 
@@ -82,7 +82,7 @@ Even though the root directory is at the base of the file tree (or the top, depe
 In Windows and Mac, the **home directory** is usually a folder labelled with your computer's username. All of your personal files and directories can be found inside this folder. This is where your computer assumes you want to start browsing from when you open your file manager.
 
 This would make the file system we looked at earlier look like this:
-![A file hierarchy containing 4 levels of folders and files](../fig/file-system-hierarchy-graphic-with-root.png){:height="500px"}
+![A file hierarchy containing with root and home directories labelled](../fig/file-system-hierarchy-graphic-with-root.png){:width="450px"}
 
 ## Create a folder for the course
 
