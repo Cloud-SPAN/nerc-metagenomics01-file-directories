@@ -11,7 +11,8 @@ objectives:
 - "Understand what working directories, paths and relative paths are"
 
 keypoints:
--
+- "It is useful to understand your computer's file system so you can navigate it with ease"
+- "Absolute paths give the full address of a file; relative paths give the location relative to the current working directory"
 ---
 ## What is a file system?
 
@@ -26,11 +27,11 @@ There are lots of different file types; we can often find out something about wh
 
 We will come across various different file types during this course, some of which you may not have seen before. Do not worry. We will introduce them to you and explain how to use them when necessary.
 
-In a file system, files are often organised into **directories**, which can also be called **folders**. Hopefully you will have used folders to organise your files before! Folders can contain sub-folders, which contain their own sub-folders, and so on almost without limit. 
+In a file system, files are organised into **directories**, which can also be called **folders**. Hopefully you will have used folders to organise your files before! Folders can contain sub-folders, which contain their own sub-folders, and so on almost without limit. 
 
 It is easiest to picture your file system as a tree, starting with the **root** (or **home**) directory and branching out from there. This is called a **hierarchical structure**. Here is an example of a hierarchical file structure:
 
-![A file hierarchy containing 4 levels of folders and files](../fig/file-system-hierarchy-graphic.png){:height="500px"}
+![A file hierarchy containing 4 levels of folders and files](../fig/file-system-hierarchy-graphic-2.png){:height="500px"}
 
 The directory you are working inside is called your **working directory**. For example, if you were editing `doc2.txt` in the diagram above, your working directory would be the folder called `docs`.
 
@@ -44,7 +45,7 @@ The directory you are working inside is called your **working directory**. For e
 >| File Explorer (Windows) | <img src="../fig/icon-file-explorer-windows.png" width="50px"> |
 >| Finder (Mac) | <img src="../fig/icon-finder-mac.png" width="50px"> |
 >
-> You probably already use these applications regularly to find and organise files.
+> You probably already use these applications regularly to find, open and organise files.
 {: .challenge}
 
 ## File paths
@@ -54,23 +55,34 @@ It is not practical to draw out a tree diagram every time we want to refer to a 
 In a **file path**, each directory is represented as a separate component separated by a character such as `\` or `/`. It is like writing an address or set of instructions for someone to follow if they want to find a specific file.
 
 For example, the path for the file called `doc3.txt` in the file system above looks like this:
-`root/docs/data/doc3.txt`.
+`home/docs/data/doc3.txt`.
+
+It is useful to note that Windows usually uses backslashes (`\`) to separate path components, while Unix and Mac both use forward slashes (`/`).
 
 ## Absolute vs relative paths
 
 There are two ways of writing a file path - absolute paths and relative paths.
 
-An absolute path contains the complete list of directories needed to locate a file on your computer. This allows you to reach the file no matter where you are. The example just given (`root/docs/data/doc3.txt`) is an absolute path.
+An absolute path contains the complete list of directories needed to locate a file on your computer. This allows you to reach the file no matter where you are. The example just given (`home/docs/data/doc3.txt`) is an absolute path.
 
 A relative path describes the location of a file relative to your current working directory. For example, if you were already in the folder called `docs`, the relative path for `doc3.txt` would be `data/doc3.txt`. There is no need to give instructions to navigate a route you have already taken.
 
-If, however, you were in the folder called `docs` and you wanted to open one of the `.exe` files, you would probably use the absolute path for that file (`root/programs/.exe`) to get there. This is because you have not navigated any of the route yet, so you need the full 'address'.
+If, however, you were in the folder called `docs` and you wanted to open one of the `.exe` files, you would probably use the absolute path for that file (`home/programs/.exe`) to get there. This is because you have not navigated any of the route yet, so you need the full 'address'.
 
-## The root
+## Root and home directories
 
-The `root` is the top-level of directories, which contains all other directories further down the tree. Sometimes, like in Unix-(Linux-) based systems, the root directory is a single folder. However, in Windows and Mac things are a little different.
+The `root` is the top-level of directories, which contains all other directories further down the tree.
 
-In Windows...
+The root is often represented as a `/` in path names. 
+
+In the Windows operating system, the root directory is also known as a drive. In most cases, this will be the `C:\` drive.
+
+Even though the root directory is at the base of the file tree (or the top, depending on how you view it), it is not necessarily where our journey through the file system starts when we launch a new session on your computer. Instead our journey begins in the **home directory**.
+
+In Windows and Mac, the **home directory** is usually a folder labelled with your computer's username. All of your personal files and directories can be found inside this folder. This is where your computer assumes you want to start browsing from when you open your file manager.
+
+This would make the file system we looked at earlier look like this:
+![A file hierarchy containing 4 levels of folders and files](../fig/file-system-hierarchy-graphic-with-root.png){:height="500px"}
 
 ## Create a folder for the course
 
