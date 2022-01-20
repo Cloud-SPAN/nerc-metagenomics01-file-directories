@@ -39,12 +39,12 @@ The directory you are working inside is called your **working directory**. For e
 >
 > Hint: remind yourself of your file system's layout using a file manager application such as:
 >
->|OS|Icon|
+>| OS  |Icon |
 >|:---|:---|
 >| File Explorer (Windows) | <img src="../fig/icon-file-explorer-windows.png" width="50px"> |
->|Finder (Mac) |<img src="../fig/icon-finder-mac.png" width="50px">|
+>| Finder (Mac) | <img src="../fig/icon-finder-mac.png" width="50px"> |
 >
-> You probably use these applications regularly to find and organise files.
+> You probably already use these applications regularly to find and organise files.
 {: .challenge}
 
 ## File paths
@@ -66,6 +66,11 @@ A relative path describes the location of a file relative to your current workin
 
 If, however, you were in the folder called `docs` and you wanted to open one of the `.exe` files, you would probably use the absolute path for that file (`root/programs/.exe`) to get there. This is because you have not navigated any of the route yet, so you need the full 'address'.
 
+## The root
+
+The `root` is the top-level of directories, which contains all other directories further down the tree. Sometimes, like in Unix-(Linux-) based systems, the root directory is a single folder. However, in Windows and Mac things are a little different.
+
+In Windows...
 
 ## Create a folder for the course
 
@@ -73,36 +78,39 @@ To keep things tidy and easily accessible, we will create a folder (directory) t
 
 In theory you can make this file anywhere in your file system but we recommend making it inside your Desktop folder, to make it easy to access.
 
-1. **Create the folder** *cloudspan* in your *Desktop*.
+1. **Create the folder** `cloudspan` in your *Desktop*.
 
-   Minimise all windows until you can see your desktop background. Right click and select *New*, then *Folder*. Name the folder *cloudspan*.
+   Minimise all windows until you can see your desktop background. Right click and select *New*, then *Folder*. Name the folder `cloudspan`.
 
-   You should see a folder icon appear on your desktop with the label *cloudspan*.
+   You should see a folder icon appear on your desktop with the label `cloudspan`.
 
-   Additionally, if you enter your file explorer application you should be able to click on the *Desktop* directory at the side and see the *cloudspan* folder.
+   Additionally, if you enter your file explorer application you should be able to click on the *Desktop* directory at the side and see the `cloudspan` folder.
 
-2. **Write down the absolute path** to your *cloudspan* folder.
+2. **Write down the absolute path** to your `cloudspan` folder.
 
    Find out what the absolute path is using your file manager application. Right click on the folder, or in any blank space inside the folder, and select *Properties*.
 
-   The field called *Location* will tell you the absolute path for your folder. Once you have this written down, do not lose it! Now you can find your way back to the *cloudspan* folder whenever you need to, no matter where you are in your file structure.
+   The field called *Location* will tell you the absolute path for your folder. Once you have this written down, do not lose it! Now you can find your way back to the `cloudspan` folder whenever you need to, no matter where you are in your file structure.
 
-****
+## Download your login key file
 
+Next we will download your unique login key file from the email you received from the Cloud-SPAN team. This type of file is called a `.pem` file. It contains a certificate which allows you to communicate with the Cloud securely. Without the `.pem` file you cannot access the Cloud.
 
+For now we will use the file explorer to move the `.pem` file around.
 
+1. **Find out where downloads are saved** on your computer.
 
+   How you so this will depend on which browser you use. You can find instructions for changing your default download location in [Chrome](https://support.google.com/chrome/answer/95759?hl=en-GB&co=GENIE.Platform%3DDesktop), [Edge](https://support.microsoft.com/en-us/microsoft-edge/find-where-your-browser-is-saving-downloads-d3e83af6-68bb-aa90-3167-eeb657013902) or [Safari](https://support.apple.com/en-gb/guide/safari/sfri40598/mac).
 
-We will then download your login key file to that folder and change its access permissions for the reasons given below. Finally we will login into your instance with ssh.
+   If you already know which folder your downloads go to, then you can skip this step.
 
-
-
-2. **Download your login key file** to the folder you just created.
+2. **Download your login key file** to the folder you created a few minutes ago.
 
    Click on the link embedded in the email you received from the Cloud-SPAN team.
    
    **Mac users** may need to Click on 'download' when the file says it can't be opened.
 
-   If your browser asks you "where do you want to download the file?", choose the directory for the course you just created.
+   If your browser asks you "where do you want to download the file?", choose the `cloudspan` directory.
 
-   Otherwise, drag and drop your login key file from wherever it was downloaded to the folder for the course you created.
+   Otherwise, once downloading is finished, copy and paste/drag and drop your login key file from wherever it was downloaded to your `cloudspan` folder.
+

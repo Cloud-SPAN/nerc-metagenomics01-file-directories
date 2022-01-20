@@ -65,11 +65,11 @@ But first, to keep things tidy and easily accessible, create a folder (or direct
 
 ## Create a folder for the course and download your login key file to that folder
 
-1. **Create the folder** *cloudspan* in your *Desktop*.
+1. **Create the folder** `cloudspan` in your *Desktop*.
 
    In your Desktop, click the right button of the mouse to open the File Explorer/Manager menu, and then left click on New and then on Folder, in Windows, or New Folder in Linux Gnome.
 
-   Name the folder *cloudspan*
+   Name the folder `cloudspan`
 
    Later you can change the name of the folder and move it somewhere else.
 
