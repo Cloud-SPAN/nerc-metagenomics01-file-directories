@@ -3,7 +3,11 @@ title: "Understanding your file system"
 teaching: 5
 exercises: 40
 questions:
-- 
+- "What is a hierarchical file system?"
+- "How is my own file system structured?"
+- "How do I find, create, move and delete folders and files on my own computer?"
+- "What is a working directory, an absolute path and a relative path?"
+- "What files and paths will I need for the Prenomics/Genomics courses?"
 objectives:
 - "Explain the hierarchical structure of a file system"
 - "Understand the structure of the file system on their on machine"
