@@ -180,7 +180,7 @@ csuser@instance05-gc:~ $ exit
 ~~~
 logout
 Connection to instance05-gc.cloud-span.aws.york.ac.uk closed.
-Amanda-MacBook-Pro-3 $
+username@machineid $
 ~~~
 {: .output}
 
