@@ -9,14 +9,13 @@ questions:
 - "What is a working directory, an absolute path and a relative path?"
 - "What files and paths will I need for the Prenomics/Genomics courses?"
 objectives:
-- "Explain the hierarchical structure of a file system"
-- "Understand the structure of the file system on their on machine"
-- "Create, move and delete folders and files on their machine"
-- "Understand what working directories, paths and relative paths are"
-
+- "Explain the hierarchical structure of a file system."
+- "Understand the structure of the file system on their own machine."
+- "Create, move and delete folders and files on their machine."
+- "Understand what working directories, paths and relative paths are."
 keypoints:
-- "It is useful to understand your computer's file system so you can navigate it with ease"
-- "Absolute paths give the full address of a file; relative paths give the location relative to the current working directory"
+- "It is useful to understand your computer's file system so you can navigate it with ease."
+- "Absolute paths give the full address of a file; relative paths give the location relative to the current working directory."
 ---
 ## What is a file system?
 
