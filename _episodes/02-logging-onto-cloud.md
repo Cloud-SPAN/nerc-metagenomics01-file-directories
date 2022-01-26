@@ -60,45 +60,25 @@ As the name implies, **ssh** provides you with a secure (encrypted) way to use a
 
 A few seconds after you enter that command to the shell in your computer, you will be logged into your AWS instance and start using a (Linux) shell running in your instance.
 
-<!--> LEGACY - Copied to episode01-understanding-file-systems
-But first, to keep things tidy and easily accessible, create a folder (or directory) to keep everything related to this course: your login key file, your notes, data, etc.  We will then download your login key file to that folder and change its access permissions for the reasons given below. Finally we will login into your instance with ssh.
-
-## Create a folder for the course and download your login key file to that folder
-
-1. **Create the folder** `cloudspan` in your *Desktop*.
-
-   In your Desktop, click the right button of the mouse to open the File Explorer/Manager menu, and then left click on New and then on Folder, in Windows, or New Folder in Linux Gnome.
-
-   Name the folder `cloudspan`
-
-   Later you can change the name of the folder and move it somewhere else.
-
-2. **Download your login key file** to the folder you just created.
-
-   Click on the link embedded in the email you received from the Cloud-SPAN team.
-   
-   **Mac users** may need to Click on 'download' when the file says it can't be opened.
-
-   If your browser asks you "where do you want to download the file?", choose the directory for the course you just created.
-
-   Otherwise, drag and drop your login key file from wherever it was downloaded to the folder for the course you created.
-<!-->
 ## Open a Terminal and change the access permissions of your login key file
 
-1. **Open terminal** (or Git Bash terminal if you are a Windows user). 
+1. **Open the *cloudspan* folder you created for the course**
 
-    Search for 'Terminal' or look for the terminal icon and click (or double click) on it:
+    Open your file manager and navigate to the `cloudspan` folder (hint: we recommended you make the folder in your *Desktop* directory - but you might have made it somewhere else). If you cannot find the folder, you can remind yourself where it is stored by looking at the absolute path you wrote down in the previous episode.
 
-    This is the Git Bash terminal icon (Windows users):   
+    The folder should contain the login key file we downloaded in the previous episode and nothing else.
 
-    <img src="../fig/gitbash-launch-icon.png" alt="GIT BASH terminal" width="50"/> 
+2. **Right-click and open your machine's command line interface**
 
-    The terminal icon in Mac and Linux looks like the following:
-    
-    <img src="../fig/icon-mac-terminal.png" alt="Mac terminal" width="50"/>
-    <img src="../fig/icon-linux-terminal.png" alt="Linux terminal" width="50"/> 
+    Now we can open the command line.
 
-    Once the terminal opens, it will display/output the **command prompt** to signal that it is ready to accept commands (instructions). The **command prompt** is 1 or 2 lines depending on your operating system (Windows, Linux, MacOS) and will be similar to the following.
+    For Windows users:
+    - Right click anywhere inside the blank space of the file manager, then select **Git Bash Here**.
+
+    For Mac users:
+    - 
+
+    A new window will open - this is your command line interface, also known as the shell or the terminal. Once the terminal opens, it will display/output the **command prompt** to signal that it is ready to accept commands (instructions). The **command prompt** is 1 or 2 lines depending on your operating system (Windows, Linux, MacOS) and will be similar to the following.
 
     Typical command prompt for Windows Git Bash users:
 
@@ -129,26 +109,15 @@ But first, to keep things tidy and easily accessible, create a folder (or direct
     
     In the rest of this course we will show only the `$` to represent the prompt. 
 
-2. **Move to the folder you created for the course**
+3. **Check that you are in the right folder**
 
-   Once the terminal opens, **you will be** in your **home folder** (directory), which contains all your files and other typical folders such as the *Desktop*, *Downloads*, *Documents*, etc.
+    The terminal should have automatically set our `cloudspan` folder as the current working directory. This is because we asked the terminal to open from a specific location.
 
-   Move to the folder you created by typing the following command and then pressing <kbd>Enter</kbd> at the command prompt:
+    You can check if the working directory is set correctly by looking at the file path which is defined to the left of your command prompt (`$`). It should display the second half of the absolute path we wrote down previously, usually starting after your computer's username, and always ending in `/cloudspan`.
 
-    ~~~
-    $ cd Desktop/cloudspan	
-    ~~~
-    {: .bash}
+    You can also check by typing the letters `ls` after the command prompt and pressing enter. This will list all the files in the working directory AKA all files in the `cloudspan` folder. In our case, this should be just one file, the login key ending in `.pem`.
 
-    *Don't type the dollar character* `$`.
-
-    The command `cd` stands for "change (to) directory", and you must specify the name of the directory you want to move to. 
-
-    In the command above, we have specified *to change to* a directory within another directory.
-
-   
-
-3. **Change the access permissions of your login key file**
+4. **Change the access permissions of your login key file**
 
     Enter the following command to change the access permissions of your file but **replace** NN with the actual number in your file name:
     ~~~
