@@ -62,13 +62,6 @@ $ ssh -i login-key-instanceNN.pem  csuser@instanceNN-gc.cloud-span.aws.york.ac.
 ~~~
 {: .bash}
 
-~~~
-username@machineid MINGW64 ~
-$
-~~~
-{: .output}
-
-
 After logging in, you will see a screen showing something like this:
 
 ~~~
