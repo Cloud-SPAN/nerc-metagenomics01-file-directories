@@ -129,3 +129,14 @@ For now we will use the file explorer to move the `.pem` file around.
 
    Otherwise, once downloading is finished, copy and paste/drag and drop your login key file from wherever it was downloaded to your `cloudspan` folder.
 
+## More about the file types we will be using
+
+We will encounter three different file types over the course of Prenomics.
+
+| File Type | Use |
+|:---|:---|
+| .pem | PEM files (like the one you just downloaded into your `cloudspan` directory) store a cryptographic key to allow you access a web domain such as the Cloud instance we will use in the next episode. You do not need to know anything about PEM files except that you will need one to be allowed access. |
+| .txt | TXT files are a common way of storing lines of text. They can be opened in almost all text-editing or word-processing programs. They contain little formatting. |
+| .fastq | FASTQ files are a text-based way of storing data from a sequencing experiment. They contain both the sequence and information about how accurate the sequence is. Your instructor will talk you through the example below. |
+
+![](fig\fasta_file_format.png)
