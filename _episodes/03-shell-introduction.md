@@ -55,6 +55,20 @@ lessons to work with this data. To avoid having to spend time
 downloading the data and downloading and installing all of the software,
 we're going to continue using our Cloud instance.
 
+As a reminder, we log in by launching Git Bash or Terminal from the `cloudspan` folder we made in today's first episode, and then using our `ssh` command.
+
+~~~
+$ ssh -i login-key-instanceNN.pem  csuser@instanceNN-gc.cloud-span.aws.york.ac.uk
+~~~
+{: .bash}
+
+~~~
+username@machineid MINGW64 ~
+$
+~~~
+{: .output}
+
+
 After logging in, you will see a screen showing something like this:
 
 ~~~
