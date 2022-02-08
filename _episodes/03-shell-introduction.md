@@ -117,12 +117,7 @@ Last login: Thu Oct 14 11:13:28 2021 from xxxxxxx
 
 ## Navigating your file system
 
-The part of the operating system responsible for managing files and directories
-is called the **file system**.
-It organises our data into files,
-which hold information,
-and directories (also called "folders"),
-which hold files or other directories.
+Now we have logged into our Cloud instance, we have access to a new file directory. This instance has been set up with some existing files and directories for you, and we will also be adding some new ones later in the course.
 
 Several commands are frequently used to create, inspect, rename, and delete files and directories.
 
@@ -156,6 +151,8 @@ $ pwd
 /home/csuser
 ~~~
 {: .output}
+
+This `csuser` directory is our **home directory**.
 
 Let's look at how our file system is organised. We can see what files and subdirectories are in this directory by running `ls`,
 which stands for "listing":
@@ -276,6 +273,14 @@ SRR097977.fastq  SRR098026.fastq
 This directory contains two files with `.fastq` extensions. FASTQ is a format
 for storing information about sequencing reads and their quality.
 We will be learning more about FASTQ files in a later lesson.
+
+Learning to navigate a new file directory can be confusing at first. To help, here is a tree diagram showing what we have explored so far. Do not worry abou the `sra_metadata ` and `.hidden` directories, as they are not important right now.
+
+![A file hierarchy tree](../fig/blank_instance_file_tree.png){:width="700px"}
+
+First we moved from our home directory at `csuser` into the `shell_data` directory, which is one level down. From there we opened up the `untrimmed_fastq` directory, which contains two `.fastq` files.
+
+Typing `cd` after the prompt and pressing enter will always take you back to your home directory.
 
 ### Shortcut: Tab Completion
 
