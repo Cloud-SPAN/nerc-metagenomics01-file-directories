@@ -139,4 +139,4 @@ We will encounter three different file types over the course of Prenomics.
 | .txt | TXT files are a common way of storing lines of text. They can be opened in almost all text-editing or word-processing programs. They contain little formatting. |
 | .fastq | FASTQ files are a text-based way of storing data from a sequencing experiment. They contain both the sequence and information about how accurate the sequence is. Your instructor will talk you through the example below. |
 
-![](fig\fasta_file_format.png)
+![A diagram showing that each read in a FASTQ file comprises 4 lines of information.](../fig\fasta_file_format.png)
