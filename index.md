@@ -2,9 +2,9 @@
 layout: lesson
 root: .
 ---
-![A comic figure explains that: "Long ago, in another age, I mastered these dark arts. But I now endeavor to live my life such that I never need them.Their power leads only to ruin". Caption: My response whenever anyone asks me to mess around with filesystems](fig/xkcd-comic-file-systems.png)
+![A comic figure is looking over the shoulder of another and is shocked by a list of files with names like 'Untitled 138 copy.docx' and 'Untitled 243.doc'. Caption: 'Protip: Never look in someone else's documents folder'.](fig/xkcd-comic-file-names.png)
 
-Welcome to the first lesson in Cloud-SPAN’s **Prenomics** course.
+Welcome to the first lesson in Cloud-SPAN’s **Prenomics** course!
 
 This course is designed to help you get the foundational skills and knowledge needed for our[ Cloud Genomics](https://cloud-span.github.io/genomics01-intro/) course, where you will learn how to analyse ‘omics data using cloud-based High Performance Computing (HPC) resources.
 
