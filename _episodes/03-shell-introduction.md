@@ -276,7 +276,7 @@ We will be learning more about FASTQ files in a later lesson.
 
 Learning to navigate a new file directory can be confusing at first. To help, here is a tree diagram showing what we have explored so far. Do not worry abou the `sra_metadata ` and `.hidden` directories, as they are not important right now.
 
-![A file hierarchy tree](../fig/blank_instance_file_tree.png){:width="700px"}
+![A file hierarchy tree](../fig/blank_instance_file_tree.png){:width="400px"}
 
 First we moved from our home directory at `csuser` into the `shell_data` directory, which is one level down. From there we opened up the `untrimmed_fastq` directory, which contains two `.fastq` files.
 
