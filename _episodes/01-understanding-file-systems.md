@@ -105,7 +105,9 @@ In theory you can make this file anywhere in your file system but we recommend m
 
 2. **Write down the absolute path** to your `cloudspan` folder.
 
-   Find out what the absolute path is using your file manager application. Right click on the folder, or in any blank space inside the folder, and select *Properties*.
+   Find out what the absolute path is using your file manager application. Right click on the folder, or in any blank space inside the folder, and then:
+   - Windows users: select *Properties*, then look at the field called *Location*.
+   - Mac Users: select *Get info*, then look at the field called *Where*.
 
    The field called *Location* will tell you the absolute path for your folder. Once you have this written down, do not lose it! Now you can find your way back to the `cloudspan` folder whenever you need to, no matter where you are in your file structure.
 
