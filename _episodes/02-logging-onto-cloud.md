@@ -76,7 +76,7 @@ A few seconds after you enter that command to the shell in your computer, you wi
     - Right click anywhere inside the blank space of the file manager, then select **Git Bash Here**.
 
     For Mac users:
-    - 
+    - Select your `cloudspan` folder, then click on 'Finder' at the top left of your screen. Hover over 'Services' and select **New Terminal at Folder**.
 
     A new window will open - this is your command line interface, also known as the shell or the terminal. Once the terminal opens, it will display/output the **command prompt** to signal that it is ready to accept commands (instructions). The **command prompt** is 1 or 2 lines depending on your operating system (Windows, Linux, MacOS) and will be similar to the following.
 
