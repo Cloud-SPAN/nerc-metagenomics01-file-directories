@@ -74,6 +74,7 @@ A few seconds after you enter that command to the shell in your computer, you wi
 
     For Windows users:
     - Right click anywhere inside the blank space of the file manager, then select **Git Bash Here**.
+    
 
     For Mac users:
     - Select your `cloudspan` folder, then click on 'Finder' at the top left of your screen. Hover over 'Services' and select **New Terminal at Folder**.
