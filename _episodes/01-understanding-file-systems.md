@@ -87,6 +87,8 @@ In Windows and Mac, the **home directory** is usually a folder labelled with you
 This would make the file system we looked at earlier look like this:
 ![A file hierarchy containing with root and home directories labelled](../fig/file-system-hierarchy-graphic-with-root.png){:width="450px"}
 
+In Unix (the operating system our instance is running on) a tilde symbol (`~`) is used as a shortcut for your home directory. So, for example, the path `~/docs/doc2.txt` is equivalent to `home/docs/doc2.txt`.
+
 ## Create a folder for the course
 
 To keep things tidy and easily accessible, we will create a folder (directory) to keep everything related to this course: the key you will need to log in, your notes, data etc. 
