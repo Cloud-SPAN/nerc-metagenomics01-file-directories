@@ -274,7 +274,7 @@ This directory contains two files with `.fastq` extensions. FASTQ is a format
 for storing information about sequencing reads and their quality.
 We will be learning more about FASTQ files in a later lesson.
 
-Learning to navigate a new file directory can be confusing at first. To help, here is a tree diagram showing what we have explored so far. Do not worry abou the `sra_metadata ` and `.hidden` directories, as they are not important right now.
+Learning to navigate a new file directory can be confusing at first. To help, here is a tree diagram showing what we have explored so far. Do not worry about the `sra_metadata ` and `.hidden` directories, as they are not important right now.
 
 ![A file hierarchy tree](../fig/blank_instance_file_tree.png){:width="400px"}
 
