@@ -144,7 +144,7 @@ We will encounter three different file types over the course of Prenomics.
 ### FASTQ files
 ![A diagram showing that each read in a FASTQ file comprises 4 lines of information.](../fig\fasta_file_format.png){:width="600px"}
 
-In the FASTQ file layout, each 'read' (i.e. sequence) is described in four lines of information.
+In the FASTQ file format, each 'read' (i.e. sequence) is described in four lines of information.
 
 - The first line is the sample name (also called the label) and may contain other information such as the read length.
 - The second line is the sequence of bases itself
