@@ -231,7 +231,7 @@ to quit.
 > in the directory. What is one piece of additional information this long format
 > gives you that you don't see with the bare `ls` command?
 >
-> Share your answer on the Padlet.
+> Share your answer on the forum.
 >
 > > ## Solution
 > > ~~~
