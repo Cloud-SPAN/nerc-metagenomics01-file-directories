@@ -89,6 +89,20 @@ This would make the file system we looked at earlier look like this:
 
 In Unix (the operating system our instance is running on) a tilde symbol (`~`) is used as a shortcut for your home directory. So, for example, the path `~/docs/doc2.txt` is equivalent to `home/docs/doc2.txt`.
 
+> ##  Challenge
+> Use the file system above to answer these questions. Don't forget to share your answer on the forum!
+>
+> 1. What is the absolute path for the document `doc4.txt`?
+> 2. Assuming you are currently in the directory called `docs`, what is the relative path for the document `doc2.txt`?
+>
+> > ## Solution
+> > 
+> > 1. The absolute path is `home/docs/data/doc4.txt` or `~/docs/data/doc4.txt`.
+> > 2. The relative path is `doc2.txt` (as you are already in the directory where `doc2.txt` is stored).
+> >
+> {: .solution}
+{: .challenge}
+
 ## Create a folder for the course
 
 To keep things tidy and easily accessible, we will create a folder (directory) to keep everything related to this course: the key you will need to log in, your notes, data etc. 
