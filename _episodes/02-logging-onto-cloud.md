@@ -73,7 +73,7 @@ A few seconds after you enter that command to the shell in your computer, you wi
     Now we can open the command line.
 
     For Windows users:
-    
+
     - Right click anywhere inside the blank space of the file manager, then select **Git Bash Here**.
   
     For Mac users:
@@ -127,7 +127,7 @@ A few seconds after you enter that command to the shell in your computer, you wi
 
 4. **Change the access permissions of your login key file**
 
-    Enter the following command to change the access permissions of your file but **replace** NN with the actual number in your file name:
+    Enter the following command to change the access permissions of your file but **replace** NNN with the actual number in your file name:
     ~~~
     $ chmod 400 login-key-instanceNNN.pem 
     ~~~
@@ -137,11 +137,11 @@ A few seconds after you enter that command to the shell in your computer, you wi
 
 ## Login into your instance with ssh
 
-1. Copy and paste the command in the Code box below to your *terminal*, but **replace** `NN` with the number in your login key file name.
+1. Copy and paste the command in the Code box below to your *terminal*, but **replace** `NNN` with the number in your login key file name.
 
     Windows Git Bash users only:
-    - **copy** the command the usual Windows way: (1) highlight it with the mouse pointer while pressing the mouse left button and (2) press Ctrl-v (keys Ctrl and v simultaneously).
-    - but **paste** it the Linux/Unix way: by pressing the mouse middle button while hovering the mouse pointer over the Git Bash window. (Try with the right button if the middle button doesn't work.)
+    - **copy** the command the usual Windows way: (1) highlight it with the mouse pointer while pressing the mouse left button and (2) press Ctrl-C (keys Ctrl and C simultaneously).
+    - but **paste** it the Linux/Unix way: by pressing the mouse middle button while hovering the mouse pointer over the Git Bash window. (Try with the right button if the middle button doesn't work.) Alternatively, right click and select `paste`.
 
     ~~~
     $ ssh -i login-key-instanceNNN.pem  csuser@instanceNNN.cloud-span.aws.york.ac.uk
