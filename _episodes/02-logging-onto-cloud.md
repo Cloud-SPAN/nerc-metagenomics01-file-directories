@@ -54,7 +54,7 @@ To login into your AWS instance for this course, you'll need:
 As the name implies, **ssh** provides you with a secure (encrypted) way to use a remote *shell*, as simple as this (you do not have to type this yet):
 
  ~~~
- $ ssh -i login-key-instanceNN.pem csuser@instanceNN-gc.cloud-span.aws.york.ac.uk
+ $ ssh -i login-key-instanceNNN.pem csuser@instanceNNN.cloud-span.aws.york.ac.uk
  ~~~
  {: .bash}
 
