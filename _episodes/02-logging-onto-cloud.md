@@ -8,7 +8,8 @@ objectives:
 - Log onto to a running instance
 - Log off from a running instance
 keypoints:
-- You can use one set of log-in credentials for many instances
+- You log into an AWS instance using the ssh command
+- The .pem file acts as a key to verify our identity to the system
 - Logging off an instance is not the same as turning off an instance
 ---
 
