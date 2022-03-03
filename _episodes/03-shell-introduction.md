@@ -58,7 +58,7 @@ we're going to continue using our Cloud instance.
 As a reminder, we log in by launching Git Bash or Terminal from the `cloudspan` folder we made in today's first episode, and then using our `ssh` command.
 
 ~~~
-$ ssh -i login-key-instanceNN.pem  csuser@instanceNN-gc.cloud-span.aws.york.ac.uk
+$ ssh -i login-key-instanceNNN.pem  csuser@instanceNNN.cloud-span.aws.york.ac.uk
 ~~~
 {: .bash}
 
@@ -374,14 +374,14 @@ using the command line shell enables us to make our workflow more efficient and 
 For now, log off using the `exit` command: This will close the connection, and your terminal will go back to showing your local computer prompt, for example:
 
 ~~~
-csuser@instance05-gc:~ $ exit
+csuser@instanceNNN:~ $ exit
 ~~~
 {: .bash}
 
 This will close the connection, and your terminal will go back to showing your local computer prompt, for example:
 ~~~
 logout
-Connection to instance05-gc.cloud-span.aws.york.ac.uk closed.
-Amanda-MacBook-Pro-3 $
+Connection to instanceNNN.cloud-span.aws.york.ac.uk closed.
+username@machineid $
 ~~~
 {: .output}
