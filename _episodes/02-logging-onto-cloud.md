@@ -43,9 +43,9 @@ This lesson covers how to log into, and out of, an *already running* Amazon inst
 
 An Amazon Web Services (AWS) instance is a **remote computer** that runs on AWS infrastructure and that is accessible from any laptop or desktop as described below. Setting up a new AWS instance requires a credit card, an AWS account, and up to a day of verification time. 
 
-To save time, your instructor has launched an AWS instance for you prior to the course, and connected it to our lesson data and software analysis tools. It all works as follows.
+If you are attending a tutor-led workshop your AMI will be created for you and will be sent the log in information you will need for this lesson. If you are self-studying Prenomics, you will need to set up your own instance using our [Create Your Own AWS Instance module](https://cloud-span.github.io/create-aws-instance-0-overview/).
 
-We have a pre-configured copy of the data and software analysis tools needed for this course that is always available to attach to a new AWS instance that is accessible to you as long as you have the log-in credentials to open it.
+Whether the AWS instance has been created for you, or you have followed the instructions to create one yourself, the AWS instance contains all the software and data needed for the Prenomics and Genomics modules. 
 
 To login into your AWS instance for this course, you'll need:
 - the name of your instance and a login key file, both of which you received via email
