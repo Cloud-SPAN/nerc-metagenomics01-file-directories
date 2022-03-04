@@ -18,5 +18,6 @@ In this lesson we will learn how the files and directories on your computer are 
 > If you have a little command line experience already, you may not need to complete this module before our [Cloud Genomics](https://cloud-span.github.io/genomics01-intro/) module. Try [our quiz](https://shiny.york.ac.uk/er13/prenomics-quiz/#section-some-general-questions) to help you judge whether you would benefit from Prenomics.
 >
 > This lesson uses an Amazon Machine Instance (AMI). If you are attending a tutor-led workshop your AMI will be created for you and will be sent the log in information you will need for this lesson. If you are self-studying Prenomics, you will need to set up your own instance using our [Create Your Own AWS Instance](https://cloud-span.github.io/create-aws-instance-0-overview/) module.
+> 
 > Before starting Prenomics, you should read the [Setup page](https://cloud-span.github.io/prenomics01-file-directories/setup.html). 
 {: .prereq}
