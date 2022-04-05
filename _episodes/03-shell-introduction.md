@@ -17,7 +17,7 @@ keypoints:
 - "Useful commands for navigating your file system include: `ls`, `pwd`, and `cd`."
 - "Most commands take options (flags) which begin with a `-`."
 - "Tab completion can reduce errors from mistyping and make work more efficient in the shell."
-layout: lesson
+
 ---
 
 ## What is a shell and why should I care?
