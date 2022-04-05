@@ -5,7 +5,7 @@ bioschemas:
   "@context": "https://schema.org",
   "@id": "https://cloud-span.github.io/prenomics00-intro/",
   "@type": "TrainingMaterial",
-  "about": [
+  about: [
     {
       "@id": "http://edamontology.org/topic_3372",
       "@type": "Thing"
@@ -15,8 +15,8 @@ bioschemas:
       "@type": "Thing"
     }
   ],
-  "abstract": "Prenomics prepares learners for the Cloud-SPAN Genomics course. It teaches the basics of command-line programming, including: (1) file directory structure, (2) use of command-line utilities to connect to and use cloud computing and storage resources and (3) basic shell commands for file navigation and basic script writing.",
-  "audience": [
+  abstract: "Prenomics prepares learners for the Cloud-SPAN Genomics course. It teaches the basics of command-line programming, including: (1) file directory structure, (2) use of command-line utilities to connect to and use cloud computing and storage resources and (3) basic shell commands for file navigation and basic script writing.",
+  audience: [
     {
       "@id": "Graduates",
       "@type": "Audience"
@@ -30,7 +30,7 @@ bioschemas:
       "@type": "Audience"
     }
   ],
-  "author": [
+  author: [
     {
       "@context": "https://schema.org",
       "@type": "Person",
@@ -116,26 +116,26 @@ bioschemas:
       "name": "Software Sustainability Institute"
     }
   ],
-  "dct:conformsTo": "https://bioschemas.org/profiles/TrainingMaterial/0.8-DRAFT-2020_10_06",
-  "description": "Prenomics prepares learners for the Cloud-SPAN Genomics course. It teaches the basics of command-line programming, including: (1) file directory structure, (2) use of command-line utilities to connect to and use cloud computing and storage resources and (3) basic shell commands for file navigation and basic script writing.",
+  dct:conformsTo: "https://bioschemas.org/profiles/TrainingMaterial/0.8-DRAFT-2020_10_06",
+  description: "Prenomics prepares learners for the Cloud-SPAN Genomics course. It teaches the basics of command-line programming, including: (1) file directory structure, (2) use of command-line utilities to connect to and use cloud computing and storage resources and (3) basic shell commands for file navigation and basic script writing.",
   "educationalLevel": "Beginner",
   "identifier": [
     "10.5281/zenodo.6354056\t"
   ],
-  "inLanguage": [
+  inLanguage: [
     "en"
   ],
-  "keywords": "shell, command line tools, cloud computing, AWS, genomics, ",
+  keywords: "shell, command line tools, cloud computing, AWS, genomics, ",
   "learningResourceType": [
     "training course"
   ],
-  "license": [
+  license: [
     {
       "@id": "https://creativecommons.org/licenses/by/4.0/",
       "@type": "CreativeWork"
     }
   ],
-  "mentions": [
+  mentions: [
     {
       "@id": "https://gitforwindows.org/",
       "@type": "Thing"
@@ -153,8 +153,8 @@ bioschemas:
       "@type": "Thing"
     }
   ],
-  "name": "Cloud-SPAN Prenomics Course",
-  "teaches": [
+  name: "Cloud-SPAN Prenomics Course",
+  teaches: [
     {
       "@id": "http://edamontology.org/topic_3372",
       "@type": "DefinedTerm"
@@ -168,12 +168,12 @@ bioschemas:
       "@type": "DefinedTerm"
     }
   ],
-  "timeRequired": {
+  timeRequired: {
     "@id": "PT12H",
     "@type": "Duration"
   },
-  "url": "https://cloud-span.github.io/prenomics00-intro/",
-  "isPartOf": [
+  url: "https://cloud-span.github.io/prenomics00-intro/",
+  isPartOf: [
     {
       "@type": "CreativeWork",
       "url": "https://cloud-span.york.ac.uk/",
