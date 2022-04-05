@@ -12,9 +12,7 @@ keypoints:
 - The .pem file acts as a key to verify our identity to the system
 - Logging off an instance is not the same as turning off an instance
 layout: lesson
-
-<script type="application/ld+json" >
-{
+bioschemas:
   "@context": "https://schema.org",
   "@id": "https://cloud-span.github.io/prenomics00-intro/",
   "@type": "TrainingMaterial",
@@ -193,8 +191,6 @@ layout: lesson
       "name": "Cloud-SPAN Training Courses"
     }
   ]
-}
-</script >
 ---
 
 <script language="javascript" type="text/javascript">

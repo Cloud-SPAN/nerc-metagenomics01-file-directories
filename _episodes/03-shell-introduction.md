@@ -18,10 +18,7 @@ keypoints:
 - "Most commands take options (flags) which begin with a `-`."
 - "Tab completion can reduce errors from mistyping and make work more efficient in the shell."
 layout: lesson
-
-
-<script type="application/ld+json" >
-{
+bioschemas:
   "@context": "https://schema.org",
   "@id": "https://cloud-span.github.io/prenomics00-intro/",
   "@type": "TrainingMaterial",
@@ -200,8 +197,6 @@ layout: lesson
       "name": "Cloud-SPAN Training Courses"
     }
   ]
-}
-</script >
 ---
 
 ## What is a shell and why should I care?

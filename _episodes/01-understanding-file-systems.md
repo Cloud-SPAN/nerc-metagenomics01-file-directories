@@ -19,9 +19,7 @@ keypoints:
 - "The FASTQ file format describes each read/sequence using four lines of information including the sample name, the sequence itself and the quality score for each base."
 layout: lesson
 
-
-<script type="application/ld+json" >
-{
+bioschemas:
   "@context": "https://schema.org",
   "@id": "https://cloud-span.github.io/prenomics00-intro/",
   "@type": "TrainingMaterial",
@@ -200,8 +198,7 @@ layout: lesson
       "name": "Cloud-SPAN Training Courses"
     }
   ]
-}
-</script >
+
 ---
 ## What is a file system?
 

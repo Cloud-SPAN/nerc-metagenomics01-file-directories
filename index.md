@@ -1,9 +1,7 @@
 ---
 layout: lesson
 root: .
-
-<script type="application/ld+json" >
-{
+bioschemas:
   "@context": "https://schema.org",
   "@id": "https://cloud-span.github.io/prenomics00-intro/",
   "@type": "TrainingMaterial",
@@ -182,8 +180,6 @@ root: .
       "name": "Cloud-SPAN Training Courses"
     }
   ]
-}
-</script >
 ---
 ![A comic figure is looking over the shoulder of another and is shocked by a list of files with names like 'Untitled 138 copy.docx' and 'Untitled 243.doc'. Caption: 'Protip: Never look in someone else's documents folder'.](fig/xkcd-comic-file-names.png)
 
