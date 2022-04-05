@@ -5,6 +5,9 @@ bioschemas:
   "@context": "https://schema.org"
   "@id": "https://cloud-span.github.io/prenomics00-intro/"
   "@type": "LearningResource"
+  "http://purl.org/dc/terms/conformsTo":
+  - "@type": CreativeWork
+    "@id": "https://bioschemas.org/profiles/TrainingMaterial/0.9-DRAFT-2020_12_08/"
   about:
   - "@id": "http://edamontology.org/topic_3372"
   - "@id": "http://edamontology.org/topic_0622"
