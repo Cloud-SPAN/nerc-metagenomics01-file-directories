@@ -11,7 +11,6 @@ keypoints:
 - You log into an AWS instance using the ssh command
 - The .pem file acts as a key to verify our identity to the system
 - Logging off an instance is not the same as turning off an instance
-layout: lesson
 ---
 
 <script language="javascript" type="text/javascript">

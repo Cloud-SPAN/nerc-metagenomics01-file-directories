@@ -17,7 +17,6 @@ keypoints:
 - "It is useful to understand your computer's file system so you can navigate it with ease."
 - "Absolute paths give the full address of a file; relative paths give the location relative to the current working directory."
 - "The FASTQ file format describes each read/sequence using four lines of information including the sample name, the sequence itself and the quality score for each base."
-layout: lesson
 ---
 ## What is a file system?
 
