@@ -1,7 +1,7 @@
 ---
 title: "Understanding your file system"
-teaching: 5
-exercises: 40
+teaching: 30
+exercises: 10
 questions:
 - "What is a hierarchical file system?"
 - "How is my own file system structured?"
