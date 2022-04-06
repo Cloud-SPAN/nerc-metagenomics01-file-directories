@@ -1,5 +1,5 @@
 ---
-layout: base
+layout: lesson
 root: .
 bioschemas:
   "@context": "https://schema.org"
