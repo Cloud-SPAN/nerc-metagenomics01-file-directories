@@ -1,5 +1,5 @@
 ---
-layout: base
+layout: base_2
 root: .
 bioschemas:
   "@context": "https://schema.org"
