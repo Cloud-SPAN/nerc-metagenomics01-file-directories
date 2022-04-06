@@ -1,19 +1,4 @@
 ---
-layout: base_2
-bioschemas:
-  "@context": "https://schema.org"
-  "@id": "https://cloud-span.github.io/prenomics00-intro/"
-  "@type": "LearningResource"
-  "http://purl.org/dc/terms/conformsTo":
-  - "@type": CreativeWork
-    "@id": "https://bioschemas.org/profiles/TrainingMaterial/0.9-DRAFT-2020_12_08/"
-  about:
-  - "@id": "http://edamontology.org/topic_3372"
-  - "@id": "http://edamontology.org/topic_0622"
-  abstract: "Prenomics prepares learners for the Cloud-SPAN Genomics course. It teaches the basics of command-line programming, including: (1) file directory structure, (2) use of command-line utilities to connect to and use cloud computing and storage resources and (3) basic shell commands for file navigation and basic script writing."
-  author: ["Emma Rand", "James Chong", "Sarah Forrester", "Annabel Cansdale", "Jorge Buenabad-Chavez", "Evelyn Greeves"]
-  name: "Cloud-SPAN Prenomics Course"
-  url: "https://cloud-span.github.io/prenomics00-intro/"
 title: "Understanding your file system"
 teaching: 30
 exercises: 10
