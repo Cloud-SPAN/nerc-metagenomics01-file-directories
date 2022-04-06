@@ -22,7 +22,7 @@ Welcome to the first lesson in Cloud-SPAN’s **Prenomics** module!
 
 This module is designed to help you get the foundational skills and knowledge needed for our [Cloud Genomics](https://cloud-span.github.io/genomics01-intro/) module, where you will learn how to analyse ‘omics data using cloud-based High Performance Computing (HPC) resources.
 
-In this lesson we will learn how the files and directories on your computer are structured, as well as logging onto the cloud and using the command line (also known as the shell) for the very first time. 
+In this lesson we will learn how the files and directories on your computer are structured, as well as logging onto the cloud and using the command line (also known as the shell) for the first time. 
 
 
 > ## Getting Started
