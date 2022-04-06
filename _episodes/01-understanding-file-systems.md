@@ -1,4 +1,5 @@
 ---
+layout: base_2
 title: "Understanding your file system"
 teaching: 30
 exercises: 10
