@@ -14,24 +14,24 @@ bioschemas:
   author: ["Emma Rand", "James Chong", "Sarah Forrester", "Annabel Cansdale", "Jorge Buenabad-Chavez", "Evelyn Greeves"]
   name: "Cloud-SPAN Prenomics Course"
   url: "https://cloud-span.github.io/prenomics00-intro/"
-# title: "Understanding your file system"
-# teaching: 30
-# exercises: 10
-# questions:
-# - "What is a hierarchical file system?"
-# - "How is my own file system structured?"
-# - "How do I find, create, move and delete folders and files on my own computer?"
-# - "What is a working directory, an absolute path and a relative path?"
-# - "What files and paths will I need for the Prenomics/Genomics courses?"
-# objectives:
-# - "Explain the hierarchical structure of a file system."
-# - "Understand the structure of the file system on their own machine."
-# - "Create, move and delete folders and files on their machine."
-# - "Understand what working directories, paths and relative paths are."
-# keypoints:
-# - "It is useful to understand your computer's file system so you can navigate it with ease."
-# - "Absolute paths give the full address of a file; relative paths give the location relative to the current working directory."
-# - "The FASTQ file format describes each read/sequence using four lines of information including the sample name, the sequence itself and the quality score for each base."
+title: "Understanding your file system"
+teaching: 30
+exercises: 10
+questions:
+- "What is a hierarchical file system?"
+- "How is my own file system structured?"
+- "How do I find, create, move and delete folders and files on my own computer?"
+- "What is a working directory, an absolute path and a relative path?"
+- "What files and paths will I need for the Prenomics/Genomics courses?"
+objectives:
+- "Explain the hierarchical structure of a file system."
+- "Understand the structure of the file system on their own machine."
+- "Create, move and delete folders and files on their machine."
+- "Understand what working directories, paths and relative paths are."
+keypoints:
+- "It is useful to understand your computer's file system so you can navigate it with ease."
+- "Absolute paths give the full address of a file; relative paths give the location relative to the current working directory."
+- "The FASTQ file format describes each read/sequence using four lines of information including the sample name, the sequence itself and the quality score for each base."
 ---
 ## What is a file system?
 
