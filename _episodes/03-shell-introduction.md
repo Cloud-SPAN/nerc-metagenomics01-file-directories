@@ -12,11 +12,14 @@ objectives:
 - "Navigate your file system using the command line."
 - "Access and read help files for `bash` programs and use help files to identify useful command options."
 - "Demonstrate the use of tab completion, and explain its advantages."
+- "Use a single command to navigate multiple steps in your directory structure, including moving backwards (one level up)."
+- "Work with hidden directories and hidden files."
 keypoints:
 - "The shell gives you the ability to work more efficiently by using keyboard commands rather than a GUI."
 - "Useful commands for navigating your file system include: `ls`, `pwd`, and `cd`."
 - "Most commands take options (flags) which begin with a `-`."
 - "Tab completion can reduce errors from mistyping and make work more efficient in the shell."
+- "Hidden files and directories start with `.` and can be viewed using `ls -a`."
 ---
 
 ## What is a shell and why should I care?
@@ -359,6 +362,140 @@ Displays the name of every program that starts with `pw`.
 >
 > You might find it useful to keep a note of the commands you learn in this course, so you can easily remember them in future. This will be faster than scrolling through the course each time you forget a command. While using the Cloud-SPAN AMI you can also type 'csguide' into the command prompt and hit enter for a text-based guide to the command line, including frequently used commands.
 {: .callout}
+
+## Moving around the file system
+
+Now we're going to learn some additional commands for moving around
+within our file system.
+
+Use the commands we've learned so far to navigate to the `shell_data/untrimmed_fastq` directory:
+
+~~~
+$ cd
+$ cd shell_data
+$ cd untrimmed_fastq
+~~~
+{: .bash}
+
+What if we want to move back up and out of this directory and to our top level
+directory? Can we type `cd shell_data`? Try it and see what happens.
+
+~~~
+$ cd shell_data
+~~~
+{: .bash}
+
+~~~
+-bash: cd: shell_data: No such file or directory
+~~~
+{: .output}
+
+Your computer looked for a directory or file called `shell_data` within the
+directory you were already in. It didn't know you wanted to look at a directory level
+above the one you were located in.
+
+We have a special command to tell the computer to move us back or up one directory level.
+
+~~~
+$ cd ..
+~~~
+{: .bash}
+
+
+Now we can use `pwd` to make sure that we are in the directory we intended to navigate
+to, and `ls` to check that the contents of the directory are correct.
+
+~~~
+$ pwd
+~~~
+{: .bash}
+
+~~~
+/home/csuser/shell_data
+~~~
+{: .output}
+
+~~~
+$ ls
+~~~
+{: .bash}
+
+~~~
+sra_metadata  untrimmed_fastq
+~~~
+{: .output}
+
+From this output, we can see that `..` did indeed take us back one level in our file system.
+
+You can chain these together like so:
+
+~~~
+$ ls ../../
+~~~
+{: .bash}
+
+prints the contents of the folder called `home`
+
+> ## Finding hidden directories
+>
+> First navigate to the `shell_data` directory. There is a hidden directory within this directory.
+> Explore the options for `ls` in the man page to find out how to see hidden directories. 
+> List the contents of the directory and identify the name of the text file in that directory.
+>
+> Share your answer on the forum!
+>
+> Hint: hidden files and folders in Unix start with `.`, for example `.my_hidden_directory`
+>
+> > ## Solution
+> >
+> > First use the `man` command to look at the options for `ls`.
+> > ~~~
+> > $ man ls
+> > ~~~
+> > {: .bash}
+> >
+> > The `-a` option is short for `all` and says that it causes `ls` to "not ignore
+> > entries starting with ." This is the option we want.
+> >
+> > ~~~
+> > $ ls -a
+> > ~~~
+> > {: .bash}
+> >
+> > ~~~
+> > .  ..  .hidden	sra_metadata  untrimmed_fastq
+> > ~~~
+> > {: .output}
+> >
+> > The name of the hidden directory is `.hidden`. We can navigate to that directory
+> > using `cd`.
+> >
+> > ~~~
+> > $ cd .hidden
+> > ~~~
+> > {: .bash}
+> >
+> > And then list the contents of the directory using `ls`.
+> >
+> > ~~~
+> > $ ls
+> > ~~~
+> > {: .bash}
+> >
+> > ~~~
+> > youfoundit.txt
+> > ~~~
+> > {: .output}
+> >
+> > The name of the text file is `youfoundit.txt`.
+> {: .solution}
+{: .challenge}
+
+In most commands the flags can be combined together in no particular order to obtain the desired results/output.
+~~~
+$ ls -Fa
+$ ls -laF
+~~~
 
 ## Summary
 
