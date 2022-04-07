@@ -12,12 +12,7 @@ bioschemas:
   - "@id": "http://edamontology.org/topic_3372"
   - "@id": "http://edamontology.org/topic_0622"
   abstract: "Prenomics prepares learners for the Cloud-SPAN Genomics course. It teaches the basics of command-line programming, including: (1) file directory structure, (2) use of command-line utilities to connect to and use cloud computing and storage resources and (3) basic shell commands for file navigation and basic script writing."
-  #author: ["Emma Rand", "James Chong", "Sarah Forrester", "Annabel Cansdale", "Jorge Buenabad-Chavez", "Evelyn Greeves"]
-  author:
-  - "@type": Person
-   name: "Emma Rand"
-  - "@type": Person
-   name: "Evelyn Greeves"
+  author: ["Emma Rand", "James Chong", "Sarah Forrester", "Annabel Cansdale", "Jorge Buenabad-Chavez", "Evelyn Greeves"]
 
   # author: 
   # - "@type": Person
