@@ -12,25 +12,28 @@ bioschemas:
   - "@id": "http://edamontology.org/topic_3372"
   - "@id": "http://edamontology.org/topic_0622"
   abstract: "Prenomics prepares learners for the Cloud-SPAN Genomics course. It teaches the basics of command-line programming, including: (1) file directory structure, (2) use of command-line utilities to connect to and use cloud computing and storage resources and (3) basic shell commands for file navigation and basic script writing."
-  author: 
-    - "@type": Person
-      name: "Emma Rand"
-    - "@type": Person
-      name: "Evelyn Greeves"
-    - "@type": Person
-      name: "Sarah Forrester"
-    - "@type": Person
-      name: "Annabel Cansdale"
-  contributor:
-      - "@type": Person
-      name: "James Chong"
-      - "@type": Person
-      name: "Jorge Buenabad Chavez"
-    - "@type": Person
-      name: "Emma Barnes"
-      - "@type": Person
-      name: "Neil Che-Hong"
+  author: ["Emma Rand", "James Chong", "Sarah Forrester", "Annabel Cansdale", "Jorge Buenabad-Chavez", "Evelyn Greeves"]
+
+  # author: 
+  # - "@type": Person
+  #   name: "Emma Rand"
+  # - "@type": Person
+  #   name: "Evelyn Greeves"
+  # - "@type": Person
+  #   name: "Sarah Forrester"
+  # - "@type": Person
+  #   name: "Annabel Cansdale"
+  # contributor:
+  #   - "@type": Person
+  #   name: "James Chong"
+  #   - "@type": Person
+  #   name: "Jorge Buenabad Chavez"
+  #   - "@type": Person
+  #   name: "Emma Barnes"
+  #   - "@type": Person
+  #   name: "Neil Chue-Hong"
   url: "https://cloud-span.github.io/prenomics00-intro/"
+
 ---
 ![A comic figure is looking over the shoulder of another and is shocked by a list of files with names like 'Untitled 138 copy.docx' and 'Untitled 243.doc'. Caption: 'Protip: Never look in someone else's documents folder'.](fig/xkcd-comic-file-names.png)
 
