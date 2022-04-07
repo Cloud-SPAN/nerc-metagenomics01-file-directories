@@ -1,28 +1,4 @@
 ---
-layout: lesson
-root: .
-bioschemas:
-  "@context": "https://schema.org"
-  "@id": "https://cloud-span.github.io/prenomics00-intro/"
-  "@type": "LearningResource"
-  "http://purl.org/dc/terms/conformsTo":
-  - "@type": CreativeWork
-    "@id": "https://bioschemas.org/profiles/TrainingMaterial/0.9-DRAFT-2020_12_08/"
-  about:
-  - "@id": "http://edamontology.org/topic_3372"
-  - "@id": "http://edamontology.org/topic_0622"
-  name: Cloud-SPAN Prenomics Course"
-  abstract: "Prenomics prepares learners for the Cloud-SPAN Genomics course. It teaches the basics of command-line programming, including: (1) file directory structure, (2) use of command-line utilities to connect to and use cloud computing and storage resources and (3) basic shell commands for file navigation and basic script writing."
-  author: ["Emma Rand", "James Chong", "Sarah Forrester", "Annabel Cansdale", "Jorge Buenabad-Chavez", "Evelyn Greeves"]
-  description: "Prenomics prepares learners for the Cloud-SPAN Genomics course. It teaches the basics of command-line programming, including: (1) file directory structure, (2) use of command-line utilities to connect to and use cloud computing and storage resources and (3) basic shell commands for file navigation and basic script writing."
-  educationalLevel: "Beginner"
-  identifier: "10.5281/zenodo.6354056\t"
-  url: "https://cloud-span.github.io/prenomics00-intro/"
-  inLanguage: "en"
-  keywords: "shell, command line tools, cloud computing, AWS, genomics"
-  license: CC-BY 4.0
-
-
 ---
 ![A comic figure is looking over the shoulder of another and is shocked by a list of files with names like 'Untitled 138 copy.docx' and 'Untitled 243.doc'. Caption: 'Protip: Never look in someone else's documents folder'.](fig/xkcd-comic-file-names.png)
 
