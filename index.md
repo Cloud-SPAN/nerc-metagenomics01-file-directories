@@ -1,4 +1,5 @@
 ---
+layout: lesson
 ---
 ![A comic figure is looking over the shoulder of another and is shocked by a list of files with names like 'Untitled 138 copy.docx' and 'Untitled 243.doc'. Caption: 'Protip: Never look in someone else's documents folder'.](fig/xkcd-comic-file-names.png)
 
