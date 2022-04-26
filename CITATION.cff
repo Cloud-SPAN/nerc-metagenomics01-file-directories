@@ -18,11 +18,11 @@ authors:
 - family-names: "Rand"
   given-names: "Emma"
   orcid: "https://orcid.org/0000-0002-1358-8275"
-title: "Cloud-SPAN Prenomics Course"
+title: "Cloud-SPAN Prenomics Course: Files and Directories"
 version: 0.1.0
-doi: 10.5281/zenodo.6354056
+doi: 10.5281/zenodo.6354060
 date-released: 2022-03-01
-url: "https://cloud-span.github.io/prenomics00-intro/"
+url: "https://cloud-span.github.io/prenomics01-file-directories/"
 references:
   - authors:
     - family-names: "Becker"
