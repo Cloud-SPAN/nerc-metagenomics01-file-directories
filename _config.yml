@@ -91,3 +91,6 @@ exclude:
 highlighter: rouge
 
 remote_theme: Cloud-SPAN/cloud-span-prenomics-theme
+
+# Google analytics
+google_analytics: G-P9V56KX6X1
