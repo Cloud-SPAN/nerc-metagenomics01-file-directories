@@ -11,7 +11,7 @@
 carpentry: "dc"
 
 # Overall title for pages.
-title: "Files and directories"
+title: "Files and Directories"
 
 #------------------------------------------------------------
 # Generic settings (should not need to change).
@@ -90,7 +90,7 @@ exclude:
 # Turn off built-in syntax highlighting.
 highlighter: rouge
 
-remote_theme: Cloud-SPAN/cloud-span-prenomics-theme
+remote_theme: Cloud-SPAN/nerc-metagenomics-theme
 
 # Google analytics
 google_analytics: G-P9V56KX6X1
