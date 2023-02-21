@@ -149,24 +149,4 @@ For now we will use the file explorer to move the `.pem` file around.
 
    Otherwise, once downloading is finished, copy and paste/drag and drop your login key file from wherever it was downloaded to your `cloudspan` folder.
 
-## More about the file types we will be using
-
-We will encounter three different file types over the course of Prenomics.
-
-| File Type | Use |
-|:---|:---|
-| .pem | PEM files (like the one you just downloaded into your `cloudspan` directory) store a cryptographic key to allow you access a web domain such as the Cloud instance we will use in the next episode. You do not need to know anything about PEM files except that you will need one to be allowed access. |
-| .txt | TXT files are a common way of storing lines of text. They can be opened in almost all text-editing or word-processing programs. They contain little formatting. |
-| .fastq | FASTQ files are a text-based way of storing data from a sequencing experiment. They contain both the sequence and information about how accurate the sequence is. Your instructor will talk you through the example below. |
-
-### FASTQ files
-![A diagram showing that each read in a FASTQ file comprises 4 lines of information.](../fig\fasta_file_format.png){:width="600px"}
-
-In the FASTQ file format, each 'read' (i.e. sequence) is described in four lines of information.
-
-- The first line is the sample name (also called the label) and may contain other information such as the read length.
-- The second line is the sequence of bases itself
-- The third line is a separator line which always starts with a '+' and may repeat the information from line 1
-- The fourth line is a string of characters representing the quality scores for each base
-
-You do not need to understand much detail about this format for the Prenomics course. You will learn more about it on day three of the [Cloud-SPAN Genomics course](https://cloud-span.github.io/genomics04-data-preparation-organisation/04-quality-control/index.html).
+Now you are ready to log into the cloud!
