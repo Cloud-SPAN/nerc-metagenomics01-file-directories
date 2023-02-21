@@ -134,16 +134,9 @@ your shell may use a different character as a prompt and may add information bef
 the prompt. When typing commands, either from these lessons or from other sources,
 do not type the prompt, only the commands that follow it.
 
-Let's find out where we are by running a command called `pwd`
-(which stands for "print working directory").
-At any moment, our **current working directory**
-is our current default directory,
-i.e.,
-the directory that the computer assumes we want to run commands in,
-unless we explicitly specify something else.
-Here,
-the computer's response is `/home/csuser`,
-which is the top level directory within our cloud system:
+Let's find out where we are by running a command called `pwd`(which stands for "print working directory").
+At any moment, our **current working directory** is our current default directory, i.e., the directory that the computer assumes we want to run commands in,unless we explicitly specify something else.
+Here, the computer's response is `/home/csuser`, which is the top level directory within our cloud system:
 
 ~~~
 $ pwd
@@ -166,24 +159,21 @@ $ ls
 {: .bash}
 
 ~~~
-bin  shell_data  software
+bin  cs_course  software
 ~~~
 {: .output}
 
 `ls` prints the names of the files and directories in the current directory in
-alphabetical order,
-arranged neatly into columns.
-We'll be working within the `shell_data` subdirectory, and creating new subdirectories, throughout this workshop.  
+alphabetical order, arranged neatly into columns.
+We'll be working within the `cs_course` subdirectory, and creating new subdirectories, throughout this workshop.  
 
-The command to change locations in our file system is `cd`, followed by a
-directory name to change our working directory.
+The command to change locations in our file system is `cd`, followed by a directory name to change our working directory.
 `cd` stands for "change directory".
 
-Let's say we want to navigate to the `shell_data` directory we saw above.  We can
-use the following command to get there:
+Let's say we want to navigate to the `cs_course` directory we saw above.  We can use the following command to get there:
 
 ~~~
-$ cd shell_data
+$ cd cs_course
 ~~~
 {: .bash}
 
@@ -195,7 +185,7 @@ $ ls
 {: .bash}
 
 ~~~
-sra_metadata  untrimmed_fastq
+data
 ~~~
 {: .output}
 
@@ -208,7 +198,7 @@ $ ls -F
 {: .bash}
 
 ~~~
-sra_metadata/  untrimmed_fastq/
+data/
 ~~~
 {: .output}
 
@@ -243,9 +233,8 @@ to quit.
 > > {: .bash}
 > >
 > > ~~~
-> > total 8
-> > drwxr-x--- 2 dcuser dcuser 4096 Jul 30  2015 sra_metadata
-> > drwxr-xr-x 2 dcuser dcuser 4096 Nov 15  2017 untrimmed_fastq
+> > total 4
+> > drwxrwxr-x  2 csuser csuser 4096 Feb 21 14:39 data
 > > ~~~
 > > {: .output}
 > >
@@ -260,30 +249,56 @@ No one can possibly learn all of these arguments - that's what the manual page
 is for! It does take practice to get used to using and understanding the information in the manual. 
 Often, you don't need to understand completely what it is saying to be able to guess what to try.
 
-Let's go into the `untrimmed_fastq` directory and see what is in there.
+Let's go into the `data` directory and see what is in there using the `cd` and `ls` commands.
 
 ~~~
-$ cd untrimmed_fastq
+$ cd data
 $ ls -F
 ~~~
 {: .bash}
 
 ~~~
-SRR097977.fastq  SRR098026.fastq
+illumina_fastq/  nano_fastq/
 ~~~
 {: .output}
 
-This directory contains two files with `.fastq` extensions. FASTQ is a format
-for storing information about sequencing reads and their quality.
+This directory contains two subdirectories. We can tell they are directories and not files because of the trailing '/'. They contain all of the raw data we will need for the rest of the course.
+
+For now, let's have a look in `illumina_fastq`. We can do this without changing directories using the `ls` command followed by the name of the directory.
+
+~~~
+$ ls illumina_fastq
+~~~
+{: .bash}
+
+~~~
+ERR4998593_1.fastq  ERR4998593_2.fastq
+~~~
+{: .output}
+
+This directory contains two files with `.fastq` extensions. FASTQ is a format for storing information about sequencing reads and their quality.
 We will be learning more about FASTQ files in a later lesson.
 
-Learning to navigate a new file directory can be confusing at first. To help, here is a tree diagram showing what we have explored so far. Do not worry about the `sra_metadata ` and `.hidden` directories, as they are not important right now.
+Let's also have a look in the  `nano_fastq` directory.
+
+~~~
+$ ls nano_fastq
+~~~
+{: .bash}
+
+~~~
+ERR5000342.fastq
+~~~
+{: .output}
+
+
+Learning to navigate a new file directory can be confusing at first. To help, here is a tree diagram showing what we have explored so far.
 
 ![A file hierarchy tree](../fig/blank_instance_file_tree.png){:width="400px"}
 
-First we moved from our home directory at `csuser` into the `shell_data` directory, which is one level down. From there we opened up the `untrimmed_fastq` directory, which contains two `.fastq` files.
+First we moved from our home directory at `csuser` into the `cs_course` directory, which is one level down. From there we opened up the `data` directory, which contains subdirectories -  `illumina_fastq` and `nano_fastq`. We had a peek inside both of these directories and found that `illumina_fastq` contained two files and `nano_fastq` contained one.
 
-Typing `cd` after the prompt and pressing enter will always take you back to your home directory.
+
 
 ### Shortcut: Tab Completion
 
@@ -292,7 +307,7 @@ can help us! When you start typing out the name of a directory or file, then
 hit the <kbd>Tab</kbd> key, the shell will try to fill in the rest of the
 directory or file name.
 
-Return to your home directory:
+First of all, typing `cd` after the prompt and pressing enter will always take you back to your home directory.Let's do this:
 
 ~~~
 $ cd
@@ -302,34 +317,40 @@ $ cd
 then enter:
 
 ~~~
-$ cd she<tab>
+$ cd cs<tab>
 ~~~
 {: .bash}
 
 The shell will fill in the rest of the directory name for
-`shell_data`.
+`cs_course`.
 
-Now change directories to `untrimmed_fastq` in `shell_data`
+Now change directories to `data` in `cs_course`.
 
 ~~~
-$ cd shell_data
-$ cd untrimmed_fastq
+$ cd cs_course
+$ cd data
 ~~~
 {: .bash}
 
-Using tab complete can be very helpful. However, it will only autocomplete
-a file or directory name if you've typed enough characters to provide
+And again into `illumina_fastq`.
+
+~~~
+$ cd illumina_fastq
+~~~
+{: .bash}
+
+Using tab complete can be very helpful. However, it will only autocomplete a file or directory name if you've typed enough characters to provide
 a unique identifier for the file or directory you are trying to access.
 
-For example, if we now try to list the files which names start with `SR`
+For example, if we now try to list the files in  `illumina_fastq` with names starting with `ERR`
 by using tab complete:  
 
 ~~~
-$ ls SR<tab>
+$ ls ERR<tab>
 ~~~
 {: .bash}
 
-The shell auto-completes your command to `SRR09`, because all file names in
+The shell auto-completes your command to `ERR4998593_`, because all file names in
 the directory begin with this prefix. When you hit
 <kbd>Tab</kbd> again, the shell will list the possible choices.
 
@@ -339,7 +360,7 @@ $ ls SRR09<tab><tab>
 {: .bash}
 
 ~~~
-SRR097977.fastq  SRR098026.fastq
+ERR4998593_1.fastq  ERR4998593_2.fastq
 ~~~
 {: .output}
 
@@ -365,23 +386,23 @@ Displays the name of every program that starts with `pw`.
 
 ## Moving around the file system
 
-Now we're going to learn some additional commands for moving around
-within our file system.
+Now we're going to learn some additional commands for moving around within our file system.
 
-Use the commands we've learned so far to navigate to the `shell_data/untrimmed_fastq` directory:
+Use the commands we've learned so far to navigate to the `illumina_fastq` directory from our home:
 
 ~~~
 $ cd
-$ cd shell_data
-$ cd untrimmed_fastq
+$ cd cs_course
+$ cd data
+$ cd illumina_fastq
 ~~~
 {: .bash}
 
 What if we want to move back up and out of this directory and to our top level
-directory? Can we type `cd shell_data`? Try it and see what happens.
+directory? Can we type `cd data`? Try it and see what happens.
 
 ~~~
-$ cd shell_data
+$ cd data
 ~~~
 {: .bash}
 
@@ -390,7 +411,7 @@ $ cd shell_data
 ~~~
 {: .output}
 
-Your computer looked for a directory or file called `shell_data` within the
+Your computer looked for a directory or file called `data` within the
 directory you were already in. It didn't know you wanted to look at a directory level
 above the one you were located in.
 
@@ -401,7 +422,6 @@ $ cd ..
 ~~~
 {: .bash}
 
-
 Now we can use `pwd` to make sure that we are in the directory we intended to navigate
 to, and `ls` to check that the contents of the directory are correct.
 
@@ -411,7 +431,7 @@ $ pwd
 {: .bash}
 
 ~~~
-/home/csuser/shell_data
+/home/csuser/cs_course/data
 ~~~
 {: .output}
 
@@ -421,11 +441,11 @@ $ ls
 {: .bash}
 
 ~~~
-sra_metadata  untrimmed_fastq
+illumina_fastq  nano_fastq
 ~~~
 {: .output}
 
-From this output, we can see that `..` did indeed take us back one level in our file system.
+From this output, we can see that `..` did indeed take us back one level in our file system, to `data`.
 
 You can chain these together like so:
 
@@ -434,15 +454,18 @@ $ ls ../../
 ~~~
 {: .bash}
 
-prints the contents of the folder called `home`
+~~~
+bin  cs_course  software 
+~~~
+{: .output}
+
+This prints the contents of the folder called `csuser` (our home folder).
 
 > ## Finding hidden directories
 >
-> First navigate to the `shell_data` directory. There is a hidden directory within this directory.
+> Stay in the `data` directory. There is a hidden directory within this directory.
 > Explore the options for `ls` in the man page to find out how to see hidden directories. 
 > List the contents of the directory and identify the name of the text file in that directory.
->
-> Share your answer on the forum!
 >
 > Hint: hidden files and folders in Unix start with `.`, for example `.my_hidden_directory`
 >
@@ -463,7 +486,7 @@ prints the contents of the folder called `home`
 > > {: .bash}
 > >
 > > ~~~
-> > .  ..  .hidden	sra_metadata  untrimmed_fastq
+> > .  ..  .hidden	illumina_fastq  nano_fastq
 > > ~~~
 > > {: .output}
 > >
