@@ -245,8 +245,7 @@ to quit.
 > {: .solution}
 {: .challenge}
 
-No one can possibly learn all of these arguments - that's what the manual page
-is for! It does take practice to get used to using and understanding the information in the manual. 
+No one can possibly learn all of these arguments - that's what the manual page is for! It does take practice to get used to using and understanding the information in the manual. 
 Often, you don't need to understand completely what it is saying to be able to guess what to try.
 
 Let's go into the `data` directory and see what is in there using the `cd` and `ls` commands.
@@ -258,11 +257,11 @@ $ ls -F
 {: .bash}
 
 ~~~
-illumina_fastq/  nano_fastq/
+illumina_fastq/   nano_fastq/   sample_fastq/
 ~~~
 {: .output}
 
-This directory contains two subdirectories. We can tell they are directories and not files because of the trailing '/'. They contain all of the raw data we will need for the rest of the course.
+This directory contains three subdirectories. We can tell they are directories and not files because of the trailing '/'. They contain all of the raw data we will need for the rest of the course.
 
 For now, let's have a look in `illumina_fastq`. We can do this without changing directories using the `ls` command followed by the name of the directory.
 
@@ -291,12 +290,24 @@ ERR5000342.fastq
 ~~~
 {: .output}
 
+And while we're looking, we might well peek into the `sample_fastq` directory too!
+
+~~~
+$ ls sample_fastq
+~~~
+{: .bash}
+
+~~~
+ERR4998592_1.fastq  ERR4998592_2.fastq
+~~~
+{: .output}
+
 
 Learning to navigate a new file directory can be confusing at first. To help, here is a tree diagram showing what we have explored so far.
 
 ![A file hierarchy tree](../fig/blank_instance_file_tree.png){:width="400px"}
 
-First we moved from our home directory at `csuser` into the `cs_course` directory, which is one level down. From there we opened up the `data` directory, which contains subdirectories -  `illumina_fastq` and `nano_fastq`. We had a peek inside both of these directories and found that `illumina_fastq` contained two files and `nano_fastq` contained one.
+First we moved from our home directory at `csuser` into the `cs_course` directory, which is one level down. From there we opened up the `data` directory, which contains subdirectories -  `illumina_fastq` and `nano_fastq`. We had a peek inside both of these directories and found that `illumina_fastq` and `sample_fastq` contained two files each, while `nano_fastq` contained one.
 
 
 
@@ -321,10 +332,9 @@ $ cd cs<tab>
 ~~~
 {: .bash}
 
-The shell will fill in the rest of the directory name for
-`cs_course`.
+The shell will fill in the rest of the directory name for `cs_course`. Press enter to execute the command and move directories.
 
-Now change directories to `data` in `cs_course`.
+Now change directories again to `data`.
 
 ~~~
 $ cd cs_course
@@ -355,7 +365,7 @@ the directory begin with this prefix. When you hit
 <kbd>Tab</kbd> again, the shell will list the possible choices.
 
 ~~~
-$ ls SRR09<tab><tab>
+$ ls ERR<tab><tab>
 ~~~
 {: .bash}
 
@@ -441,7 +451,7 @@ $ ls
 {: .bash}
 
 ~~~
-illumina_fastq  nano_fastq
+illumina_fastq  nano_fastq  sample_fastq
 ~~~
 {: .output}
 
@@ -486,7 +496,7 @@ This prints the contents of the folder called `csuser` (our home folder).
 > > {: .bash}
 > >
 > > ~~~
-> > .  ..  .hidden	illumina_fastq  nano_fastq
+> > .  ..  .hidden	illumina_fastq  nano_fastq  sample_fastq
 > > ~~~
 > > {: .output}
 > >
