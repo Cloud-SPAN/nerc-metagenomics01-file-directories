@@ -27,23 +27,13 @@ keypoints:
 A *shell* is a computer program that has a command line where you type commands to do 
 things on your computer rather than using menus and buttons on a Graphical User Interface (GUI).
 
-There are many reasons to learn about the shell:
+There are many reasons to learn how to use the shell/command line:
 
-* Many bioinformatics tools can only be used through a command line interface, or
-have extra capabilities in the command line version that are not available in the GUI.
-This is true, for example, of BLAST, which offers many advanced functions only accessible
-to users who know how to use a shell.  
-* In bioinformatics you often need to do the same set of tasks with a large number of files. A shell allows you to
-automate such repetitive tasks.  
-* The shell makes your work less error-prone. When humans do the same thing a many times
-they make mistakes. Your computer can do the same thing a thousand times without mistakes.  
-* The shell makes your work more reproducible. When you carry out your work in the command-line
-(rather than a GUI), your computer keeps a record of every step that you've carried out, which you can use
-to re-do your work when you need to. It also describes unambiguously what you've done,
-so that others can check your work or apply your process to new data.  
-* Many bioinformatic tasks require large amounts of computing power and can't realistically be run on your
-own machine. These tasks are best performed using remote computers or cloud computing, which can only be accessed
-through a shell.
+* Software access - many bioinformatics tools can only be used through a command line interface, or have extra capabilities in the command line version that are not available in the GUI (this is true of most of the software used in this course).
+* Cloud access - bioinformatics tasks which require large amounts of computing power (like the ones we'll do later in this course!) are best performed on remote computers or cloud computing platforms, which are accessed via a shell.
+* Automation - repetitive tasks (e.g. doing the same set of tasks a large number of files) can be easily automated in the shell, saving you time and preventing human error.
+* Reproducibility - when using the shell your computer keeps a record of every step that you've carried out, which you can use
+to re-do your work when you need to.
 
 In this lesson you will learn how to use the command line interface to move around in your file system.
 
