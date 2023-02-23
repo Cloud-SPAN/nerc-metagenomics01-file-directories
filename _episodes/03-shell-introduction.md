@@ -29,10 +29,10 @@ things on your computer rather than using menus and buttons on a Graphical User 
 
 There are many reasons to learn how to use the shell/command line:
 
-* Software access - many bioinformatics tools can only be used through a command line interface, or have extra capabilities in the command line version that are not available in the GUI (this is true of most of the software used in this course).
-* Cloud access - bioinformatics tasks which require large amounts of computing power (like the ones we'll do later in this course!) are best performed on remote computers or cloud computing platforms, which are accessed via a shell.
-* Automation - repetitive tasks (e.g. doing the same set of tasks a large number of files) can be easily automated in the shell, saving you time and preventing human error.
-* Reproducibility - when using the shell your computer keeps a record of every step that you've carried out, which you can use
+* **Software access** - many bioinformatics tools can only be used through a command line interface, or have extra capabilities in the command line version that are not available in the GUI (this is true of most of the software used in this course).
+* **Cloud access** - bioinformatics tasks which require large amounts of computing power (like the ones we'll do later in this course!) are best performed on remote computers or cloud computing platforms, which are accessed via a shell.
+* **Automation** - repetitive tasks (e.g. doing the same set of tasks a large number of files) can be easily automated in the shell, saving you time and preventing human error.
+* **Reproducibility** - when using the shell your computer keeps a record of every step that you've carried out, which you can use
 to re-do your work when you need to.
 
 In this lesson you will learn how to use the command line interface to move around in your file system.
