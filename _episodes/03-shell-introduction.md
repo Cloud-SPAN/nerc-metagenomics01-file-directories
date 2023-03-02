@@ -247,11 +247,11 @@ $ ls -F
 {: .bash}
 
 ~~~
-illumina_fastq/   nano_fastq/   sample_fastq/
+illumina_fastq/   nano_fastq/
 ~~~
 {: .output}
 
-This directory contains three subdirectories. We can tell they are directories and not files because of the trailing '/'. They contain all of the raw data we will need for the rest of the course.
+This directory contains two subdirectories. We can tell they are directories and not files because of the trailing '/'. They contain all of the raw data we will need for the rest of the course.
 
 For now, let's have a look in `illumina_fastq`. We can do this without changing directories using the `ls` command followed by the name of the directory.
 
@@ -280,24 +280,11 @@ ERR5000342.fastq
 ~~~
 {: .output}
 
-And while we're looking, we might well peek into the `sample_fastq` directory too!
-
-~~~
-$ ls sample_fastq
-~~~
-{: .bash}
-
-~~~
-ERR4998592_1.fastq  ERR4998592_2.fastq
-~~~
-{: .output}
-
-
 Learning to navigate a new file directory can be confusing at first. To help, here is a tree diagram showing what we have explored so far.
 
 ![A file hierarchy tree](../fig/blank_instance_file_tree.png){:width="400px"}
 
-First we moved from our home directory at `csuser` into the `cs_course` directory, which is one level down. From there we opened up the `data` directory, which contains subdirectories -  `illumina_fastq` and `nano_fastq`. We had a peek inside both of these directories and found that `illumina_fastq` and `sample_fastq` contained two files each, while `nano_fastq` contained one.
+First we moved from our home directory at `csuser` into the `cs_course` directory, which is one level down. From there we opened up the `data` directory, which contains subdirectories -  `illumina_fastq` and `nano_fastq`. We had a peek inside both of these directories and found that `illumina_fastq` contained two files, while `nano_fastq` contained one.
 
 
 
@@ -441,7 +428,7 @@ $ ls
 {: .bash}
 
 ~~~
-illumina_fastq  nano_fastq  sample_fastq
+illumina_fastq  nano_fastq
 ~~~
 {: .output}
 
