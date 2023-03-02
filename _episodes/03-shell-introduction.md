@@ -473,7 +473,7 @@ This prints the contents of the folder called `csuser` (our home folder).
 > > {: .bash}
 > >
 > > ~~~
-> > .  ..  .hidden	illumina_fastq  nano_fastq  sample_fastq
+> > .  ..  .hidden	illumina_fastq  nano_fastq
 > > ~~~
 > > {: .output}
 > >
