@@ -450,11 +450,13 @@ This prints the contents of the folder called `csuser` (our home folder).
 
 > ## Finding hidden directories
 >
-> Stay in the `data` directory. There is a hidden directory within this directory.
+> There is a hidden directory inside the `cs_course` directory.
 > Explore the options for `ls` in the man page to find out how to see hidden directories. 
-> List the contents of the directory and identify the name of the text file in that directory.
+> List the contents of the directory and identify the name of the text file in `cs_course`.
 >
-> Hint: hidden files and folders in Unix start with `.`, for example `.my_hidden_directory`
+> Hint 1: hidden files and folders in Unix start with `.`, for example `.my_hidden_directory`
+>
+> Hint 2: `cs_course` is one level above `data`, our current working directory.
 >
 > > ## Solution
 > >
@@ -466,21 +468,23 @@ This prints the contents of the folder called `csuser` (our home folder).
 > >
 > > The `-a` option is short for `all` and says that it causes `ls` to "not ignore
 > > entries starting with ." This is the option we want.
+> > 
+> > We can use `..` to view the contents of the directory above our current working directory.
 > >
 > > ~~~
-> > $ ls -a
+> > $ ls -a ..
 > > ~~~
 > > {: .bash}
 > >
 > > ~~~
-> > .  ..  .hidden	illumina_fastq  nano_fastq
+> > .  ..  .hidden	data
 > > ~~~
 > > {: .output}
 > >
-> > The name of the hidden directory is `.hidden`. We can navigate to that directory
-> > using `cd`.
+> > The name of the hidden directory is `.hidden`. We can navigate to that directory using `cd`.
 > >
 > > ~~~
+> > $ cd ..
 > > $ cd .hidden
 > > ~~~
 > > {: .bash}
