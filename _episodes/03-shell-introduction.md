@@ -175,7 +175,7 @@ $ ls
 {: .bash}
 
 ~~~
-data
+data   databases
 ~~~
 {: .output}
 
@@ -188,7 +188,7 @@ $ ls -F
 {: .bash}
 
 ~~~
-data/
+data/   databases/
 ~~~
 {: .output}
 
@@ -223,9 +223,10 @@ to quit.
 > > {: .bash}
 > >
 > > ~~~
-> > total 4
-> > drwxrwxr-x  2 csuser csuser 4096 Feb 21 14:39 data
-> > ~~~
+> > total 12
+> > drwxrwxr-x 4 csuser csuser 4096 Oct 22 09:04 data
+> > drwxrwxr-x 3 csuser csuser 4096 Oct  6 13:08 databases
+
 > > {: .output}
 > >
 > > The additional information given includes the name of the owner of the file,
@@ -276,7 +277,7 @@ $ ls nano_fastq
 {: .bash}
 
 ~~~
-ERR5000342.fastq
+ERR5000342_sub15.fastq
 ~~~
 {: .output}
 
@@ -337,14 +338,7 @@ $ ls ERR<tab>
 ~~~
 {: .bash}
 
-The shell auto-completes your command to `ERR4998593_`, because all file names in
-the directory begin with this prefix. When you hit
-<kbd>Tab</kbd> again, the shell will list the possible choices.
-
-~~~
-$ ls ERR<tab><tab>
-~~~
-{: .bash}
+The shell auto-completes your command to `ERR4998593_`, because all file names in the directory begin with this prefix. When you hit <kbd>Tab</kbd> again, the shell will list the possible choices.
 
 ~~~
 ERR4998593_1.fastq  ERR4998593_2.fastq
@@ -477,7 +471,7 @@ This prints the contents of the folder called `csuser` (our home folder).
 > > {: .bash}
 > >
 > > ~~~
-> > .  ..  .hidden	data
+> > .  ..	data   databases   .hidden
 > > ~~~
 > > {: .output}
 > >
