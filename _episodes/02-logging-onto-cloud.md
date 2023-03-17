@@ -9,7 +9,7 @@ objectives:
 - Log off from a running instance
 keypoints:
 - You log into an AWS instance using the ssh command
-- The .pem file acts as a key to verify our identity to the system
+- The .pem file acts as a key to verify our identity to the Linux operating system in your AWS instance.
 - Logging off an instance is not the same as turning off an instance
 ---
 
@@ -37,15 +37,11 @@ window.onload = set_page_view_defaults;
 
 ## Important Note
 
-This lesson covers how to log into, and out of, an *already running* Amazon instance.
+This lesson covers how to log into, and out of, an *already running* AWS instance.
 
 ## Background to AWS
 
-An Amazon Web Services (AWS) instance is a **remote computer** that runs on AWS infrastructure and that is accessible from any laptop or desktop as described below. Setting up a new AWS instance requires a credit card, an AWS account, and up to a day of verification time. 
-
-If you are attending a tutor-led workshop your AMI will be created for you and will be sent the log in information you will need for this lesson. If you are self-studying Prenomics, you will need to set up your own instance using our [Create Your Own AWS Instance module](https://cloud-span.github.io/create-aws-instance-0-overview/).
-
-Whether the AWS instance has been created for you, or you have followed the instructions to create one yourself, the AWS instance contains all the software and data needed for the Prenomics and Genomics modules. 
+An Amazon Web Services (AWS) instance is a **remote computer** that runs on AWS infrastructure and that is accessible from any laptop or desktop as described below. For this course, an AWS instance will have been created for you by the Cloud-SPAN team.
 
 To login into your AWS instance for this course, you'll need:
 - the name of your instance and a login key file, both of which you received via email
@@ -141,7 +137,7 @@ A few seconds after you enter that command to the shell in your computer, you wi
 1. Copy and paste the command in the Code box below to your *terminal*, but **replace** `NNN` with the number in your login key file name.
 
     Windows Git Bash users only:
-    - **copy** the command the usual Windows way: (1) highlight it with the mouse pointer while pressing the mouse left button and (2) press Ctrl-C (keys Ctrl and C simultaneously).
+    - **copy** the command the usual Windows way: (1) highlight it with the mouse pointer while pressing the mouse left button and (2) press Ctrl-c (keys Ctrl and c simultaneously).
     - but **paste** it the Linux/Unix way: by pressing the mouse middle button while hovering the mouse pointer over the Git Bash window. (Try with the right button if the middle button doesn't work.) Alternatively, right click and select `paste`.
 
     ~~~

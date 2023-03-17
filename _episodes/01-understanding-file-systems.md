@@ -7,7 +7,6 @@ questions:
 - "How is my own file system structured?"
 - "How do I find, create, move and delete folders and files on my own computer?"
 - "What is a working directory, an absolute path and a relative path?"
-- "What files and paths will I need for the Prenomics/Genomics courses?"
 objectives:
 - "Explain the hierarchical structure of a file system."
 - "Understand the structure of the file system on their own machine."
@@ -16,7 +15,6 @@ objectives:
 keypoints:
 - "It is useful to understand your computer's file system so you can navigate it with ease."
 - "Absolute paths give the full address of a file; relative paths give the location relative to the current working directory."
-- "The FASTQ file format describes each read/sequence using four lines of information including the sample name, the sequence itself and the quality score for each base."
 ---
 ## What is a file system?
 
@@ -31,18 +29,17 @@ There are lots of different file types; we can often find out something about wh
 
 We will come across various different file types during this course, some of which you may not have seen before. Do not worry. We will introduce them to you and explain how to use them when necessary.
 
-In a file system, files are organised into **directories**, which can also be called **folders**. Hopefully you will have used folders to organise your files before! Folders can contain sub-folders, which contain their own sub-folders, and so on almost without limit. 
+In a file system, files are organised into **directories**, which can also be called **folders**. Hopefully you will have used folders to organise your files before! Folders can contain sub-folders, which can contain their own sub-folders, and so on almost without limit. 
 
-It is easiest to picture your file system as a tree, starting with the **root** (or **home**) directory and branching out from there. This is called a **hierarchical structure**. Here is an example of a hierarchical file structure:
+It is easiest to picture a file system, or part of it, as a tree that starts at a directory and branches out from there. This is called a **hierarchical structure**. The figure below shows an example of a hierarchical file structure that starts at the "**home directory**" of the user named **user1**:
 
 ![A file hierarchy containing 4 levels of folders and files](../fig/file-system-hierarchy-graphic-2.png){:width="450px"}
 
 The directory you are working inside is called your **working directory**. For example, if you were editing `doc2.txt` in the diagram above, your working directory would be the folder called `docs`.
 
 > ## Exercise
-> Think about your own computer and how your files and directories are organised. Sketch a tree diagram like the one above for your file system.
->
-> Hint: remind yourself of your file system's layout using a file manager application such as:
+> Think about your own computer and how your files and directories are organised. Sketch a tree diagram like the one above for your file system.\
+Hint: remind yourself of your file system's layout using a file manager application such as:
 >
 >| OS  |Icon |
 >|:---|:---|
@@ -54,46 +51,49 @@ The directory you are working inside is called your **working directory**. For e
 
 ## File paths
 
-It is not practical to draw out a tree diagram every time we want to refer to a file's location with a system. Instead, we can represent the information as a **file path**.
+It is not practical to draw out a tree diagram every time we want to refer to a file's location. Instead, we can represent the information as a **file path**.
 
 In a **file path**, each directory is represented as a separate component separated by a character such as `\` or `/`. It is like writing an address or set of instructions for someone to follow if they want to find a specific file.
 
 For example, the path for the file called `doc3.txt` in the file system above looks like this:
-`home/docs/data/doc3.txt`.
+`/home/docs/data/doc3.txt`  in a Unix or Linux computer.
 
-It is useful to note that Windows usually uses backslashes (`\`) to separate path components, while Unix and Mac both use forward slashes (`/`).
+It is useful to note that Windows uses backslashes (`\`) to separate path components, while Unix, Linux and Mac use forward slashes (`/`).
 
 ## Absolute vs relative paths
 
 There are two ways of writing a file path - absolute paths and relative paths.
 
-An absolute path contains the complete list of directories needed to locate a file on your computer. This allows you to reach the file no matter where you are. The example just given (`home/docs/data/doc3.txt`) is an absolute path.
+An absolute path contains the complete list of directories needed to locate a file on your computer. This allows you to reach the file no matter where you are. The example just given (`/home/docs/data/doc3.txt`) is an absolute path.
 
 A relative path describes the location of a file relative to your current working directory. For example, if you were already in the folder called `docs`, the relative path for `doc3.txt` would be `data/doc3.txt`. There is no need to give instructions to navigate a route you have already taken.
 
-If, however, you were in the folder called `docs` and you wanted to open one of the `.exe` files, you would probably use the absolute path for that file (`home/programs/.exe`) to get there. This is because you have not navigated any of the route yet, so you need the full 'address'.
+If, however, you were in the folder called `docs` and you wanted to open one of the `.exe` files,
+you can use the absolute path for that file (/home/evelyin/programs/.exe) to open it. Later in the course you will learn how to specify relative paths to files in directories outside your current directory.
 
 ## Root and home directories
 
 The `root` is the top-level of directories, which contains all other directories further down the tree.
 
-The root is often represented as a `/` in path names. 
+The root is represented as a `/` in path names that start with a `/` in Unix, Linux, and Mac operating systems.
 
 In the Windows operating system, the root directory is also known as a drive. In most cases, this will be the `C:\` drive.
 
-Even though the root directory is at the base of the file tree (or the top, depending on how you view it), it is not necessarily where our journey through the file system starts when we launch a new session on your computer. Instead our journey begins in the **home directory**.
+Even though the root directory is at the base of the file tree (or the top, depending on how you view it), it is not necessarily where our journey through the file system starts when we launch a new session on our computer. Instead our journey begins in the so called "home directory".
 
-In Windows and Mac, the **home directory** is usually a folder labelled with your computer's username. All of your personal files and directories can be found inside this folder. This is where your computer assumes you want to start browsing from when you open your file manager.
+In Windows, Mac, Unix, and Linux, the "**home directory**" is a folder named with your computer’s username. All of your personal files and directories can be found inside this folder. This is where your computer assumes you want to start browsing from when you open your file manager. 
+
+The location of your home directory (and of the home directory of all users in a computer system) is inside the directory called **Users** in Windows and Mac, and inside the directory called **home** in Unix and Linux --- and both **Users** and **home** are inside the root directory. (The term "**home directory**" derived from the convention to name **home** the directory that contains all username directories --- which convention was introduced for Unix systems in 1969. The **/home** directory is rarely ever referred to but if you need to, you could use: the “parent home directory” or the “home directory just below the root”).
 
 This would make the file system we looked at earlier look like this:
 ![A file hierarchy containing with root and home directories labelled](../fig/file-system-hierarchy-graphic-with-root.png){:width="450px"}
 
-In Unix (the operating system we will use later in the course) a tilde symbol (`~`) is used as a shortcut for your home directory. So, for example, the path `~/docs/doc2.txt` is equivalent to `home/docs/doc2.txt`.
+In Linux (the operating system we will use later in the course), a tilde symbol (`~`) is used as a shortcut for your home directory. So, for example, the path `~/docs/doc2.txt` is equivalent to `/home/user1/docs/doc2.txt`.
 
 > ##  Challenge
 > Use the file system above to answer these questions. Don't forget to share your answer on the forum!
 >
-> 1. What is the absolute path for the document `doc4.txt`?
+> 1. What is the absolute path for the document `doc4.txt` on a Linux computer?
 > 2. Assuming you are currently in the directory called `docs`, what is the relative path for the document `doc2.txt`?
 >
 > > ## Solution
@@ -108,7 +108,7 @@ In Unix (the operating system we will use later in the course) a tilde symbol (`
 
 To keep things tidy and easily accessible, we will create a folder (directory) to keep everything related to this course: the key you will need to log in, your notes, data etc. 
 
-In theory you can make this file anywhere in your file system but we recommend making it inside your Desktop folder, to make it easy to access.
+In theory you can make this folder anywhere in your file system but we recommend making it inside your Desktop folder, to make it easy to access.
 
 1. **Create the folder** `cloudspan` in your *Desktop*.
 
@@ -135,7 +135,7 @@ For now we will use the file explorer to move the `.pem` file around.
 
 1. **Find out where downloads are saved** on your computer.
 
-   How you so this will depend on which browser you use. You can find instructions for changing your default download location in [Chrome](https://support.google.com/chrome/answer/95759?hl=en-GB&co=GENIE.Platform%3DDesktop), [Edge](https://support.microsoft.com/en-us/microsoft-edge/find-where-your-browser-is-saving-downloads-d3e83af6-68bb-aa90-3167-eeb657013902) or [Safari](https://support.apple.com/en-gb/guide/safari/sfri40598/mac).
+   How you do this will depend on which browser you use. You can find instructions for changing your default download location in [Chrome](https://support.google.com/chrome/answer/95759?hl=en-GB&co=GENIE.Platform%3DDesktop), [Edge](https://support.microsoft.com/en-us/microsoft-edge/find-where-your-browser-is-saving-downloads-d3e83af6-68bb-aa90-3167-eeb657013902) or [Safari](https://support.apple.com/en-gb/guide/safari/sfri40598/mac).
 
    If you already know which folder your downloads go to, then you can skip this step.
 

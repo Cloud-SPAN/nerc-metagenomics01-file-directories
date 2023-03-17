@@ -17,7 +17,7 @@ objectives:
 keypoints:
 - "The shell gives you the ability to work more efficiently by using keyboard commands rather than a GUI."
 - "Useful commands for navigating your file system include: `ls`, `pwd`, and `cd`."
-- "Most commands take options (flags) which begin with a `-`."
+- "Most commands take options (flags) which begin with a `-` (hyphen /minus sign)."
 - "Tab completion can reduce errors from mistyping and make work more efficient in the shell."
 - "Hidden files and directories start with `.` and can be viewed using `ls -a`."
 ---
@@ -31,7 +31,7 @@ There are many reasons to learn how to use the shell/command line:
 
 * **Software access** - many bioinformatics tools can only be used through a command line interface, or have extra capabilities in the command line version that are not available in the GUI (this is true of most of the software used in this course).
 * **Cloud access** - bioinformatics tasks which require large amounts of computing power (like the ones we'll do later in this course!) are best performed on remote computers or cloud computing platforms, which are accessed via a shell.
-* **Automation** - repetitive tasks (e.g. doing the same set of tasks a large number of files) can be easily automated in the shell, saving you time and preventing human error.
+* **Automation** - repetitive tasks (e.g. doing the same set of tasks on a large number of files) can be easily automated in the shell, saving you time and preventing human error.
 * **Reproducibility** - when using the shell your computer keeps a record of every step that you've carried out, which you can use
 to re-do your work when you need to.
 
@@ -126,7 +126,7 @@ do not type the prompt, only the commands that follow it.
 
 Let's find out where we are by running a command called `pwd`(which stands for "print working directory").
 At any moment, our **current working directory** is our current default directory, i.e., the directory that the computer assumes we want to run commands in,unless we explicitly specify something else.
-Here, the computer's response is `/home/csuser`, which is the top level directory within our cloud system:
+Here, the computer's response is `/home/csuser`:
 
 ~~~
 $ pwd
@@ -138,7 +138,7 @@ $ pwd
 ~~~
 {: .output}
 
-This `csuser` directory is our **home directory**.
+This `csuser` directory is our **home directory** within our cloud system.
 
 Let's look at how our file system is organised. We can see what files and subdirectories are in this directory by running `ls`,
 which stands for "listing":
@@ -226,7 +226,7 @@ to quit.
 > > total 12
 > > drwxrwxr-x 4 csuser csuser 4096 Oct 22 09:04 data
 > > drwxrwxr-x 3 csuser csuser 4096 Oct  6 13:08 databases
-
+> > ~~~
 > > {: .output}
 > >
 > > The additional information given includes the name of the owner of the file,
@@ -286,8 +286,6 @@ Learning to navigate a new file directory can be confusing at first. To help, he
 ![A file hierarchy tree](../fig/blank_instance_file_tree.png){:width="400px"}
 
 First we moved from our home directory at `csuser` into the `cs_course` directory, which is one level down. From there we opened up the `data` directory, which contains subdirectories -  `illumina_fastq` and `nano_fastq`. We had a peek inside both of these directories and found that `illumina_fastq` contained two files, while `nano_fastq` contained one.
-
-
 
 ### Shortcut: Tab Completion
 
@@ -362,7 +360,7 @@ Displays the name of every program that starts with `pw`.
 
 > ## Tip
 >
-> You might find it useful to keep a note of the commands you learn in this course, so you can easily remember them in future. This will be faster than scrolling through the course each time you forget a command. While using the Cloud-SPAN AMI you can also type 'csguide' into the command prompt and hit enter for a text-based guide to the command line, including frequently used commands.
+> You might find it useful to keep a note of the commands you learn in this course, so you can easily remember them in future. This will be faster than scrolling through the course each time you forget a command. While using your Cloud-SPAN AWS instance you can also type `csguide` into the command prompt and hit enter for a text-based guide to the command line, including frequently used commands.
 {: .callout}
 
 ## Moving around the file system
@@ -446,7 +444,7 @@ This prints the contents of the folder called `csuser` (our home folder).
 >
 > There is a hidden directory inside the `cs_course` directory.
 > Explore the options for `ls` in the man page to find out how to see hidden directories. 
-> List the contents of the directory and identify the name of the text file in `cs_course`.
+> List the contents of the directory and identify the name of the text file in the hidden directory.
 >
 > Hint 1: hidden files and folders in Unix start with `.`, for example `.my_hidden_directory`
 >
