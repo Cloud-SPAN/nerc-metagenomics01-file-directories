@@ -33,7 +33,7 @@ In a file system, files are organised into **directories**, which can also be ca
 
 It is easiest to picture a file system, or part of it, as a tree that starts at a directory and branches out from there. This is called a **hierarchical structure**. The figure below shows an example of a hierarchical file structure that starts at the "**home directory**" of the user named **user1**:
 
-![A file hierarchy containing 4 levels of folders and files](../fig/file-system-hierarchy-graphic-2.png){:width="450px"}
+![A file hierarchy containing 4 levels of folders and files](../fig/prenomics_file_hierarchy.png){:width="450px"}
 
 The directory you are working inside is called your **working directory**. For example, if you were editing `doc2.txt` in the diagram above, your working directory would be the folder called `docs`.
 
@@ -86,7 +86,7 @@ In Windows, Mac, Unix, and Linux, the "**home directory**" is a folder named wit
 The location of your home directory (and of the home directory of all users in a computer system) is inside the directory called **Users** in Windows and Mac, and inside the directory called **home** in Unix and Linux --- and both **Users** and **home** are inside the root directory. (The term "**home directory**" derived from the convention to name **home** the directory that contains all username directories --- which convention was introduced for Unix systems in 1969. The **/home** directory is rarely ever referred to but if you need to, you could use: the “parent home directory” or the “home directory just below the root”).
 
 This would make the file system we looked at earlier look like this:
-![A file hierarchy containing with root and home directories labelled](../fig/file-system-hierarchy-graphic-with-root.png){:width="450px"}
+![A file hierarchy containing with root and home directories labelled](../fig/prenomics_file_hierarchy_root.png){:width="450px"}
 
 In Linux (the operating system we will use later in the course), a tilde symbol (`~`) is used as a shortcut for your home directory. So, for example, the path `~/docs/doc2.txt` is equivalent to `/home/user1/docs/doc2.txt`.
 
