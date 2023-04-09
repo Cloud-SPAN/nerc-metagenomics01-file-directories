@@ -79,7 +79,7 @@ From the root, the file system is:
 
 Your home directory is:
 
--   `C:\Users\user1/` on Windows
+-   `C:\Users\user1\` on Windows
 -   `/Users/user1/` on Mac
 -   `/home/user1/` on Linux
 
