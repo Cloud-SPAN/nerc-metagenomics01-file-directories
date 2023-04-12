@@ -56,39 +56,47 @@ It is not practical to draw out a tree diagram every time we want to refer to a 
 In a **file path**, each directory is represented as a separate component separated by a character such as `\` or `/`. It is like writing an address or set of instructions for someone to follow if they want to find a specific file.
 
 For example, the path for the file called `doc3.txt` in the file system above looks like this:
-`/home/docs/data/doc3.txt`  in a Unix or Linux computer.
+`user1/docs/data/doc3.txt`  in a Unix or Linux computer.
 
 It is useful to note that Windows uses backslashes (`\`) to separate path components, while Unix, Linux and Mac use forward slashes (`/`).
-
-## Absolute vs relative paths
-
-There are two ways of writing a file path - absolute paths and relative paths.
-
-An absolute path contains the complete list of directories needed to locate a file on your computer. This allows you to reach the file no matter where you are. The example just given (`/home/docs/data/doc3.txt`) is an absolute path.
-
-A relative path describes the location of a file relative to your current working directory. For example, if you were already in the folder called `docs`, the relative path for `doc3.txt` would be `data/doc3.txt`. There is no need to give instructions to navigate a route you have already taken.
-
-If, however, you were in the folder called `docs` and you wanted to open one of the `.exe` files,
-you can use the absolute path for that file (/home/evelyin/programs/.exe) to open it. Later in the course you will learn how to specify relative paths to files in directories outside your current directory.
 
 ## Root and home directories
 
 The `root` is the top-level of directories, which contains all other directories further down the tree.
 
-The root is represented as a `/` in path names that start with a `/` in Unix, Linux, and Mac operating systems.
+The root is represented as a `/` in in Unix, Linux, and Mac operating systems.
 
 In the Windows operating system, the root directory is also known as a drive. In most cases, this will be the `C:\` drive.
 
 Even though the root directory is at the base of the file tree (or the top, depending on how you view it), it is not necessarily where our journey through the file system starts when we launch a new session on our computer. Instead our journey begins in the so called "home directory".
 
-In Windows, Mac, Unix, and Linux, the "**home directory**" is a folder named with your computer’s username. All of your personal files and directories can be found inside this folder. This is where your computer assumes you want to start browsing from when you open your file manager. 
+In Windows, Mac, Unix, and Linux, the "**home directory**" is a folder named with your username. Your personal files and directories can be found inside this folder. This is where your computer assumes you want to start when you open your file manager. 
 
-The location of your home directory (and of the home directory of all users in a computer system) is inside the directory called **Users** in Windows and Mac, and inside the directory called **home** in Unix and Linux --- and both **Users** and **home** are inside the root directory. (The term "**home directory**" derived from the convention to name **home** the directory that contains all username directories --- which convention was introduced for Unix systems in 1969. The **/home** directory is rarely ever referred to but if you need to, you could use: the “parent home directory” or the “home directory just below the root”).
+On Windows and Mac your home directory is a directory inside directory called **Users** and named with your username. On Unix/Linux systems it is called **home**.
 
-This would make the file system we looked at earlier look like this:
+From the root, the file system is:
 ![A file hierarchy containing with root and home directories labelled](../fig/prenomics_file_hierarchy_root.png){:width="450px"}
 
+Your home directory is:
+
+-   `C:\Users\user1\` on Windows
+-   `/Users/user1/` on Mac
+-   `/home/user1/` on Linux
+
+
 In Linux (the operating system we will use later in the course), a tilde symbol (`~`) is used as a shortcut for your home directory. So, for example, the path `~/docs/doc2.txt` is equivalent to `/home/user1/docs/doc2.txt`.
+
+
+## Absolute vs relative paths
+
+There are two ways of writing a file path - absolute paths and relative paths.
+
+An absolute path contains the complete list of directories needed to locate a file on your computer. This allows you to reach the file no matter where you are. 
+
+A relative path describes the location of a file relative to your current working directory. For example, if you were already in the folder called `docs`, the relative path for `doc3.txt` would be `data/doc3.txt`. There is no need to give instructions to navigate a route you have already taken.
+
+If, however, you were in the folder called `docs` and you wanted to open one of the `.exe` files, you would need to give the path to `.exe` *relative* to the docs folder or give the absolute path.
+
 
 > ##  Challenge
 > Use the file system above to answer these questions. Don't forget to share your answer on the forum!
@@ -98,7 +106,7 @@ In Linux (the operating system we will use later in the course), a tilde symbol 
 >
 > > ## Solution
 > > 
-> > 1. The absolute path is `home/docs/data/doc4.txt` or `~/docs/data/doc4.txt`.
+> > 1. The absolute path is `/home/user1/docs/data/doc4.txt` or `~/docs/data/doc4.txt`.
 > > 2. The relative path is `doc2.txt` (as you are already in the directory where `doc2.txt` is stored).
 > >
 > {: .solution}

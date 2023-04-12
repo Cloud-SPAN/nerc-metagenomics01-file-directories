@@ -191,10 +191,9 @@ username@machineid $
 
 ## Subsequent logins to your AWS instance
 
-To login back to your instance, open a terminal, move to the directory you created for the course, and `ssh` as before:
+To login back to your instance, open a terminal, make sure you are in your `cloudspan` folder and `ssh` as before:
 
 ~~~ 
-$ cd Desktop/cloudspan
 $ ssh -i login-key-instanceNNN.pem  csuser@instanceNNN.cloud-span.aws.york.ac.uk
 ~~~
 {: .bash}
