@@ -64,7 +64,7 @@ It is useful to note that Windows uses backslashes (`\`) to separate path compon
 
 The `root` is the top-level of directories, which contains all other directories further down the tree.
 
-The root is represented as a `/` in in Unix, Linux, and Mac operating systems.
+The root is represented as a `/` in Unix, Linux, and Mac operating systems.
 
 In the Windows operating system, the root directory is also known as a drive. In most cases, this will be the `C:\` drive.
 
