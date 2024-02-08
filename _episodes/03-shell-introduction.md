@@ -277,7 +277,7 @@ $ ls nano_fastq
 {: .bash}
 
 ~~~
-ERR5000342_sub15.fastq
+ERR5000342_sub12.fastq
 ~~~
 {: .output}
 
